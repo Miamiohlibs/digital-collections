@@ -85,8 +85,8 @@ export function Header() {
                       key={index}
                       className="menu-group flex flex-col gap-y-3"
                     >
-                      {menuGroup.map((menuItem) => (
-                        <div className="menu-item flex-auto">
+                      {menuGroup.map((menuItem, subIndex) => (
+                        <div className="menu-item flex-auto" key={subIndex}>
                           {"name" in menuItem ? (
                             menuItem.href ? (
                               <Link href={`/research/${menuItem.href}`}>
@@ -132,8 +132,8 @@ export function Header() {
                       key={index}
                       className="menu-group flex flex-col gap-y-3"
                     >
-                      {menuGroup.map((menuItem) => (
-                        <div className="menu-item flex-auto">
+                      {menuGroup.map((menuItem, subIndex) => (
+                        <div className="menu-item flex-auto" key={subIndex}>
                           {"name" in menuItem ? (
                             menuItem.href ? (
                               <Link href={`/use/${menuItem.href}`}>
@@ -179,8 +179,8 @@ export function Header() {
                       key={index}
                       className="menu-group flex flex-col gap-y-3"
                     >
-                      {menuGroup.map((menuItem) => (
-                        <div className="menu-item flex-auto">
+                      {menuGroup.map((menuItem, subIndex) => (
+                        <div className="menu-item flex-auto" key={subIndex}>
                           {"name" in menuItem ? (
                             menuItem.href ? (
                               <Link href={`/about/${menuItem.href}`}>
@@ -213,7 +213,12 @@ export function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Miami University Libraries</span>
-              <img alt="" src="logo.png" className="h-8 w-auto" />
+              <Image
+                className="h-8 w-auto"
+                src="https://www.lib.miamioh.edu/images/ULB-Logos/Primary/Full-color%20and%20white%20text/Digital/png/0721_PTier1_Libraries_HS_186KW_W_Digital.png"
+                alt="MUL logo"
+                fill={true}
+              />
             </a>
             <button
               type="button"
@@ -239,8 +244,8 @@ export function Header() {
                     {ResearchMenu.map((menuGroup, index) => (
                       <Disclosure.Button className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         <div key={index} className="menu-group">
-                          {menuGroup.map((menuItem) => (
-                            <div className="menu-item text-start">
+                          {menuGroup.map((menuItem, subIndex) => (
+                            <div className="menu-item text-start" key={subIndex}>
                               {"name" in menuItem ? (
                                 menuItem.href ? (
                                   <Link href={`/research/${menuItem.href}`}>
@@ -274,8 +279,8 @@ export function Header() {
                     {UseLibraryMenu.map((menuGroup, index) => (
                       <Disclosure.Button className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         <div key={index} className="menu-group">
-                          {menuGroup.map((menuItem) => (
-                            <div className="menu-item text-start">
+                          {menuGroup.map((menuItem, subIndex) => (
+                            <div className="menu-item text-start" key={subIndex}>
                               {"name" in menuItem ? (
                                 menuItem.href ? (
                                   <Link href={`/use/${menuItem.href}`}>
@@ -309,8 +314,8 @@ export function Header() {
                     {AboutMenu.map((menuGroup, index) => (
                       <Disclosure.Button className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         <div key={index} className="menu-group">
-                          {menuGroup.map((menuItem) => (
-                            <div className="menu-item text-start">
+                          {menuGroup.map((menuItem, subIndex) => (
+                            <div className="menu-item text-start" key={subIndex}>
                               {"name" in menuItem ? (
                                 menuItem.href ? (
                                   <Link href={`/about/${menuItem.href}`}>

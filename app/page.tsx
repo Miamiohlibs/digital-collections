@@ -112,7 +112,7 @@ export default function Example() {
           </h1>
           <p className="mt-4 text-xl text-white">
             The new arrivals have, well, newly arrived. Check out the latest
-            options from our summer small-batch release while they're still in
+            options from our summer small-batch release while they are still in
             stock.
           </p>
           <a
@@ -295,7 +295,7 @@ export default function Example() {
                 </h2>
                 <p className="mt-3 text-xl text-white">
                   Endless tasks, limited hours, a single piece of paper. Not
-                  really a haiku, but we're doing our best here. No kanban
+                  really a haiku, but we are doing our best here. No kanban
                   boards, burndown charts, or tangled flowcharts with our Focus
                   system. Just the undeniable urge to fill empty circles.
                 </p>
