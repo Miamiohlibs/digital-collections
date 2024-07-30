@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from 'next/image'
 import { Fragment, useState } from "react";
 import {
   ResearchMenu,
@@ -38,11 +37,10 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Miami University Libraries</span>
-            <Image
+            <img
               className="h-16 w-auto"
               src="https://www.lib.miamioh.edu/images/ULB-Logos/Primary/Full-color%20and%20white%20text/Digital/png/0721_PTier1_Libraries_HS_186KW_W_Digital.png"
               alt="MUL logo"
-              fill={true}
             />
           </Link>
         </div>
@@ -82,11 +80,14 @@ export function Header() {
                 <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
                   {ResearchMenu.map((menuGroup, index) => (
                     <div
-                      key={index}
                       className="menu-group flex flex-col gap-y-3"
+                      key={menuGroup[index].name}
                     >
                       {menuGroup.map((menuItem, subIndex) => (
-                        <div className="menu-item flex-auto" key={subIndex}>
+                        <div
+                          className="menu-item flex-auto"
+                          key={menuItem.name + subIndex}
+                        >
                           {"name" in menuItem ? (
                             menuItem.href ? (
                               <Link href={`/research/${menuItem.href}`}>
@@ -129,11 +130,14 @@ export function Header() {
                 <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
                   {UseLibraryMenu.map((menuGroup, index) => (
                     <div
-                      key={index}
                       className="menu-group flex flex-col gap-y-3"
+                      key={menuGroup[index].name}
                     >
                       {menuGroup.map((menuItem, subIndex) => (
-                        <div className="menu-item flex-auto" key={subIndex}>
+                        <div
+                          className="menu-item flex-auto"
+                          key={menuItem.name + subIndex}
+                        >
                           {"name" in menuItem ? (
                             menuItem.href ? (
                               <Link href={`/use/${menuItem.href}`}>
@@ -176,11 +180,14 @@ export function Header() {
                 <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
                   {AboutMenu.map((menuGroup, index) => (
                     <div
-                      key={index}
                       className="menu-group flex flex-col gap-y-3"
+                      key={menuGroup[index].name}
                     >
                       {menuGroup.map((menuItem, subIndex) => (
-                        <div className="menu-item flex-auto" key={subIndex}>
+                        <div
+                          className="menu-item flex-auto"
+                          key={menuItem.name + subIndex}
+                        >
                           {"name" in menuItem ? (
                             menuItem.href ? (
                               <Link href={`/about/${menuItem.href}`}>
@@ -213,11 +220,10 @@ export function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Miami University Libraries</span>
-              <Image
+              <img
                 className="h-8 w-auto"
                 src="https://www.lib.miamioh.edu/images/ULB-Logos/Primary/Full-color%20and%20white%20text/Digital/png/0721_PTier1_Libraries_HS_186KW_W_Digital.png"
                 alt="MUL logo"
-                fill={true}
               />
             </a>
             <button
@@ -231,7 +237,7 @@ export function Header() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+              <div className="space-y-2 py-6" key="mainMenu">
                 <Disclosure as="div" className="-mx-3">
                   <Disclosure.Button className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                     Research and Support
@@ -242,10 +248,16 @@ export function Header() {
                   </Disclosure.Button>
                   <Disclosure.Panel className="mt-2 space-y-2">
                     {ResearchMenu.map((menuGroup, index) => (
-                      <Disclosure.Button className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <div key={index} className="menu-group">
+                      <Disclosure.Button
+                        className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        key={menuGroup[index].name}
+                      >
+                        <div className="menu-group">
                           {menuGroup.map((menuItem, subIndex) => (
-                            <div className="menu-item text-start" key={subIndex}>
+                            <div
+                              className="menu-item text-start"
+                              key={menuItem.name + subIndex}
+                            >
                               {"name" in menuItem ? (
                                 menuItem.href ? (
                                   <Link href={`/research/${menuItem.href}`}>
@@ -277,10 +289,16 @@ export function Header() {
                   </Disclosure.Button>
                   <Disclosure.Panel className="mt-2 space-y-2">
                     {UseLibraryMenu.map((menuGroup, index) => (
-                      <Disclosure.Button className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <div key={index} className="menu-group">
+                      <Disclosure.Button
+                        className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        key={menuGroup[index].name}
+                      >
+                        <div className="menu-group">
                           {menuGroup.map((menuItem, subIndex) => (
-                            <div className="menu-item text-start" key={subIndex}>
+                            <div
+                              className="menu-item text-start"
+                              key={menuItem.name + subIndex}
+                            >
                               {"name" in menuItem ? (
                                 menuItem.href ? (
                                   <Link href={`/use/${menuItem.href}`}>
@@ -312,10 +330,16 @@ export function Header() {
                   </Disclosure.Button>
                   <Disclosure.Panel className="mt-2 space-y-2">
                     {AboutMenu.map((menuGroup, index) => (
-                      <Disclosure.Button className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        <div key={index} className="menu-group">
+                      <Disclosure.Button
+                        className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        key={menuGroup[index].name}
+                      >
+                        <div className="menu-group">
                           {menuGroup.map((menuItem, subIndex) => (
-                            <div className="menu-item text-start" key={subIndex}>
+                            <div
+                              className="menu-item text-start"
+                              key={menuItem.name + subIndex}
+                            >
                               {"name" in menuItem ? (
                                 menuItem.href ? (
                                   <Link href={`/about/${menuItem.href}`}>
@@ -337,13 +361,14 @@ export function Header() {
                   </Disclosure.Panel>
                 </Disclosure>
               </div>
-              <div className="py-6">
-                {SuperTopMenu.map((MenuItem) => (
+              <div className="py-6" key="superMenu123">
+                {SuperTopMenu.map((menuItem) => (
                   <Link
-                    href={MenuItem.href}
+                    key={menuItem.name}
+                    href={menuItem.href}
                     className="-mx-3 block rounded-lg px-3 py-1 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    {MenuItem.name}
+                    {menuItem.name}
                   </Link>
                 ))}
               </div>
