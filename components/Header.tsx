@@ -2,7 +2,12 @@
 
 import Link from "next/link";
 import { Fragment, useState } from "react";
-import { ResearchMenu, UseLibraryMenu, SuperTopMenu } from "@/constant/Nav";
+import {
+  ResearchMenu,
+  UseLibraryMenu,
+  AboutMenu,
+  SuperTopMenu,
+} from "@/constant/Nav";
 
 import {
   Dialog,
@@ -129,7 +134,54 @@ export function Header() {
                         <div className="menu-item flex-auto">
                           {"name" in menuItem ? (
                             menuItem.href ? (
-                              <Link href={`/research/${menuItem.href}`}>
+                              <Link href={`/use/${menuItem.href}`}>
+                                {menuItem.name}
+                              </Link>
+                            ) : (
+                              <span className="font-bold">{menuItem.name}</span>
+                            )
+                          ) : (
+                            <></>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </PopoverPanel>
+            </Transition>
+          </Popover>
+
+          <Popover>
+            <PopoverButton className="flex items-center gap-x-1 text-xl font-normal text-gray-100">
+              About
+              <ChevronDownIcon
+                className="h-5 w-5 flex-none text-gray-400"
+                aria-hidden="true"
+              />
+            </PopoverButton>
+
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 -translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 -translate-y-1"
+            >
+              <PopoverPanel className="absolute inset-x-0 top-28 -z-10 bg-white shadow-lg ring-1 ring-gray-900/5">
+                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
+                  {AboutMenu.map((menuGroup, index) => (
+                    <div
+                      key={index}
+                      className="menu-group flex flex-col gap-y-3"
+                    >
+                      {menuGroup.map((menuItem) => (
+                        <div className="menu-item flex-auto">
+                          {"name" in menuItem ? (
+                            menuItem.href ? (
+                              <Link href={`/about/${menuItem.href}`}>
                                 {menuItem.name}
                               </Link>
                             ) : (
@@ -225,6 +277,41 @@ export function Header() {
                               {"name" in menuItem ? (
                                 menuItem.href ? (
                                   <Link href={`/use/${menuItem.href}`}>
+                                    {menuItem.name}
+                                  </Link>
+                                ) : (
+                                  <span className="font-bold">
+                                    {menuItem.name}
+                                  </span>
+                                )
+                              ) : (
+                                <></>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </Disclosure.Button>
+                    ))}
+                  </Disclosure.Panel>
+                </Disclosure>
+
+                <Disclosure as="div" className="-mx-3">
+                  <Disclosure.Button className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    About
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                    />
+                  </Disclosure.Button>
+                  <Disclosure.Panel className="mt-2 space-y-2">
+                    {AboutMenu.map((menuGroup, index) => (
+                      <Disclosure.Button className="block w-full rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        <div key={index} className="menu-group">
+                          {menuGroup.map((menuItem) => (
+                            <div className="menu-item text-start">
+                              {"name" in menuItem ? (
+                                menuItem.href ? (
+                                  <Link href={`/about/${menuItem.href}`}>
                                     {menuItem.name}
                                   </Link>
                                 ) : (

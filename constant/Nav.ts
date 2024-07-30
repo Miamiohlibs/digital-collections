@@ -78,6 +78,37 @@ export const UseLibraryMenu = [
   ],
 ];
 
+export const AboutMenu = [
+  [
+    { name: "Locations & Hours" },
+    { name: "Library Hours", href: "" },
+    { name: "King Library", href: "" },
+    { name: "Wertz Art & Architecture Library", href: "" },
+    { name: "Special Collections and University Archives", href: "" },
+    { name: "Regional Libraries", href: "" },
+    { name: "Amos Music Library Closure", href: "" },
+  ],
+  [
+    { name: "Our Organization" },
+    { name: "Contact Us", href: "" },
+    { name: "Staff Directory", href: "" },
+    { name: "Subject Librarians", href: "" },
+    { name: "Welcome from the Dean", href: "" },
+    { name: "Strategic Plan - Catalyst", href: "" },
+    { name: "Employment", href: "" },
+    { name: "Policies", href: "" },
+    { name: "FAQs", href: "" },
+  ],
+  [
+    { name: "News and Events" },
+    { name: "Library News", href: "" },
+    { name: "Events and Exhibits", href: "" },
+    { name: "Social Media", href: "" },
+    { name: "Support the Libraries", href: "" },
+    { name: "COVID-19 (novel coronavirus) updates and resources", href: "" },
+  ],
+];
+
 export const SuperTopMenu = [
   { name: "myMiami", href: "https://mymiami.miamioh.edu/" },
   {

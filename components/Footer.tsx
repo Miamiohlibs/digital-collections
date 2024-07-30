@@ -3,7 +3,7 @@ import { footerNavigation } from "@/constant/FooterStatic";
 
 export function Footer() {
   return (
-    <footer aria-labelledby="footer-heading" className="bg-gray-900">
+    <footer aria-labelledby="footer-heading" className="bg-red-900">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -74,34 +74,6 @@ export function Footer() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="mt-12 md:mt-16 xl:mt-0">
-            <h3 className="text-sm font-medium text-white">
-              Sign up for our newsletter
-            </h3>
-            <p className="mt-6 text-sm text-gray-300">
-              The latest deals and savings, sent to your inbox weekly.
-            </p>
-            <form className="mt-2 flex sm:max-w-md">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                type="text"
-                required
-                autoComplete="email"
-                className="w-full min-w-0 appearance-none rounded-md border border-white bg-white px-4 py-2 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
-              />
-              <div className="ml-4 flex-shrink-0">
-                <button
-                  type="submit"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-900"
-                >
-                  Sign up
-                </button>
-              </div>
-            </form>
           </div>
         </div>
 
