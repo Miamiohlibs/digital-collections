@@ -77,3 +77,15 @@ export const UseLibraryMenu = [
     { name: "Healthy Together at the University Libraries", href: "/services" },
   ],
 ];
+
+export const SuperTopMenu = [
+  { name: "myMiami", href: "https://mymiami.miamioh.edu/" },
+  {
+    name: "My Library Account",
+    href: "https://holmes.lib.miamioh.edu/patroninfo.html",
+  },
+  {
+    name: "Give",
+    href: "https://www.givetomiamioh.org/s/916/16/interior-flah.aspx?sid=916&gid=1&pgid=5141",
+  },
+];

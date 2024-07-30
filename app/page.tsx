@@ -1,6 +1,5 @@
 "use client";
 
-
 import {
   Dialog,
   DialogBackdrop,
@@ -23,7 +22,6 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-
 
 const categories = [
   {
@@ -90,20 +88,16 @@ const collections = [
   },
 ];
 
-
 export default function Example() {
- 
-
   return (
     <div className="bg-white">
-    
       {/* Hero section */}
       <div className="relative bg-gray-900">
         {/* Decorative image and overlay */}
         <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
           <img
             alt=""
-            src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg"
+            src="https://livedmu.lib.miamioh.edu/assets/img/carousel/Watch-main-cut.png"
             className="h-full w-full object-cover object-center"
           />
         </div>
@@ -112,10 +106,9 @@ export default function Example() {
           className="absolute inset-0 bg-gray-900 opacity-50"
         />
 
-
         <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center sm:py-64 lg:px-0">
           <h1 className="text-4xl font-bold tracking-tight text-white lg:text-6xl">
-            New arrivals are here
+            Finding Freedom
           </h1>
           <p className="mt-4 text-xl text-white">
             The new arrivals have, well, newly arrived. Check out the latest
@@ -126,7 +119,7 @@ export default function Example() {
             href="#"
             className="mt-8 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100"
           >
-            Shop New Arrivals
+            Read More
           </a>
         </div>
       </div>
@@ -142,7 +135,7 @@ export default function Example() {
               id="category-heading"
               className="text-2xl font-bold tracking-tight text-gray-900"
             >
-              Shop by Category
+              Related Resources
             </h2>
             <a
               href="#"
@@ -189,7 +182,7 @@ export default function Example() {
               href="#"
               className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
             >
-              Browse all categories
+              Browse All Categories
               <span aria-hidden="true"> &rarr;</span>
             </a>
           </div>
@@ -214,20 +207,20 @@ export default function Example() {
                   id="social-impact-heading"
                   className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
                 >
-                  <span className="block sm:inline">Level up</span>
-                  <span className="block sm:inline">your desk</span>
+                  <span className="block sm:inline">Introduction</span>
                 </h2>
                 <p className="mt-3 text-xl text-white">
-                  Make your desk beautiful and organized. Post a picture to
-                  social media and watch it get more likes than life-changing
-                  announcements. Reflect on the shallow nature of existence. At
-                  least you have a really nice desk setup.
+                  Lived Experiences Through Storytelling: Race at Miami
+                  University is a collaborative storytelling project that
+                  chronicles the history of racial dynamics at Miami University
+                  through documentaries, oral histories, and archival stories of
+                  students, alumni, faculty, and staff of color.
                 </p>
                 <a
                   href="#"
                   className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                 >
-                  Shop Workspace
+                  Browse All Collections
                 </a>
               </div>
             </div>
@@ -243,11 +236,12 @@ export default function Example() {
             id="collection-heading"
             className="text-2xl font-bold tracking-tight text-gray-900"
           >
-            Shop by Collection
+            Related Collections
           </h2>
           <p className="mt-4 text-base text-gray-500">
-            Each season, we collaborate with world-class designers to create a
-            collection inspired by the natural world.
+            At the heart of the project are the lived experiences of the past
+            and present who have shared their experiences while providing
+            resources for teaching, studying and learning.
           </p>
 
           <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
@@ -297,7 +291,7 @@ export default function Example() {
                   id="comfort-heading"
                   className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
                 >
-                  Simple productivity
+                  About Digital Collections
                 </h2>
                 <p className="mt-3 text-xl text-white">
                   Endless tasks, limited hours, a single piece of paper. Not
@@ -309,15 +303,13 @@ export default function Example() {
                   href="#"
                   className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                 >
-                  Shop Focus
+                  Browse All
                 </a>
               </div>
             </div>
           </div>
         </section>
       </main>
-
-     
     </div>
   );
 }
