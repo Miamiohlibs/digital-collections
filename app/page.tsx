@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import {
   Dialog,
   DialogBackdrop,
@@ -95,7 +95,7 @@ export default function Example() {
       <div className="relative bg-gray-900">
         {/* Decorative image and overlay */}
         <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
-          <img
+          <Image fill={true}
             alt=""
             src="https://livedmu.lib.miamioh.edu/assets/img/carousel/Watch-main-cut.png"
             className="h-full w-full object-cover object-center"
@@ -157,7 +157,7 @@ export default function Example() {
                       className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
                     >
                       <span aria-hidden="true" className="absolute inset-0">
-                        <img
+                        <Image fill={true}
                           alt=""
                           src={category.imageSrc}
                           className="h-full w-full object-cover object-center"
@@ -195,7 +195,7 @@ export default function Example() {
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
-              <img
+              <Image fill={true}
                 alt=""
                 src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
                 className="h-full w-full object-cover object-center"
@@ -255,7 +255,7 @@ export default function Example() {
                   aria-hidden="true"
                   className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
                 >
-                  <img
+                  <Image fill={true}
                     alt={collection.imageAlt}
                     src={collection.imageSrc}
                     className="h-full w-full object-cover object-center"
@@ -279,7 +279,7 @@ export default function Example() {
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
-              <img
+              <Image fill={true}
                 alt=""
                 src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-02.jpg"
                 className="h-full w-full object-cover object-center"

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from 'next/image'
 import { Fragment, useState } from "react";
 import {
   ResearchMenu,
@@ -37,10 +38,11 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Miami University Libraries</span>
-            <img
+            <Image
               className="h-16 w-auto"
               src="https://www.lib.miamioh.edu/images/ULB-Logos/Primary/Full-color%20and%20white%20text/Digital/png/0721_PTier1_Libraries_HS_186KW_W_Digital.png"
               alt="MUL logo"
+              fill={true}
             />
           </Link>
         </div>
