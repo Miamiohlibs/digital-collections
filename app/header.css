@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.corner-alumni{
+    background-image: url("/CornerImages/AlumniHallCornerImg.png");
+}

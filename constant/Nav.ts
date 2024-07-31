@@ -74,7 +74,6 @@ export const UseLibraryMenu = [
     { name: "Faculty", href: "/services" },
     { name: "Graduate Students", href: "/services" },
     { name: "New Students", href: "/services" },
-    { name: "Healthy Together at the University Libraries", href: "/services" },
   ],
 ];
 
@@ -86,7 +85,6 @@ export const AboutMenu = [
     { name: "Wertz Art & Architecture Library", href: "/locations" },
     { name: "Special Collections and University Archives", href: "/locations" },
     { name: "Regional Libraries", href: "/locations" },
-    { name: "Amos Music Library Closure", href: "/locations" },
   ],
   [
     { name: "Our Organization" },
@@ -105,10 +103,6 @@ export const AboutMenu = [
     { name: "Events and Exhibits", href: "/news-events" },
     { name: "Social Media", href: "/news-events" },
     { name: "Support the Libraries", href: "/news-events" },
-    {
-      name: "COVID-19 (novel coronavirus) updates and resources",
-      href: "/news-events",
-    },
   ],
 ];
 

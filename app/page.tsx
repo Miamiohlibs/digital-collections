@@ -1,26 +1,4 @@
 "use client";
-import {
-  Dialog,
-  DialogBackdrop,
-  DialogPanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-  Tab,
-  TabGroup,
-  TabList,
-  TabPanel,
-  TabPanels,
-} from "@headlessui/react";
-import {
-  Bars3Icon,
-  MagnifyingGlassIcon,
-  QuestionMarkCircleIcon,
-  ShoppingBagIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const categories = [
   {
