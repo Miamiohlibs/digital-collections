@@ -20,19 +20,20 @@ import {
 } from "@headlessui/react";
 
 import HeaderMobile from "./HeaderMobile";
-
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative isolate z-10 border-b-2 bg-red-800">
+    <header className="relative isolate z-10 border-b-2">
       <nav aria-label="Global" className="mx-auto max-w-7xl p-6 lg:px-8">
         {/* Super Top Menu */}
-        <div className="flex space-x-6 justify-end me-7" key="SuperTopMenuMain">
+        <div
+          className="hidden lg:flex space-x-1 justify-end SuperTopMenuMain"
+          key="SuperTopMenuMain"
+        >
           {SuperTopMenu.map((supertopitem) => (
             <Link
               key={supertopitem.name}
@@ -42,6 +43,9 @@ export function Header() {
               {supertopitem.name}
             </Link>
           ))}
+          <button className="text-sm text-white hover:text-gray-100">
+            Site Search
+          </button>
         </div>
         {/* End of Super Top */}
 
@@ -50,11 +54,13 @@ export function Header() {
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Miami University Libraries</span>
-              <img
-                className="h-16 w-auto"
-                src="https://www.lib.miamioh.edu/images/ULB-Logos/Primary/Full-color%20and%20white%20text/Digital/png/0721_PTier1_Libraries_HS_186KW_W_Digital.png"
-                alt="MUL logo"
-              />
+              {!mobileMenuOpen && (
+                <img
+                  className="h-16 w-auto md:h-20 lg:h-24"
+                  src="https://www.lib.miamioh.edu/images/ULB-Logos/Primary/Full-color%20and%20white%20text/Digital/png/0721_PTier1_Libraries_HS_186KW_W_Digital.png"
+                  alt="MUL logo"
+                />
+              )}
             </Link>
           </div>
           {/* Mobile hamburger button */}
