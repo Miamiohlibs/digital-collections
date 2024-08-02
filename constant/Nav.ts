@@ -1,3 +1,15 @@
+export const SuperTopMenu = [
+  { name: "myMiami", href: "https://mymiami.miamioh.edu/" },
+  {
+    name: "My Library Account",
+    href: "https://holmes.lib.miamioh.edu/patroninfo.html",
+  },
+  {
+    name: "Give",
+    href: "https://www.givetomiamioh.org/s/916/16/interior-flah.aspx?sid=916&gid=1&pgid=5141",
+  },
+];
+
 export const ResearchMenu = [
   [
     { name: "Find" },
@@ -106,14 +118,36 @@ export const AboutMenu = [
   ],
 ];
 
-export const SuperTopMenu = [
-  { name: "myMiami", href: "https://mymiami.miamioh.edu/" },
-  {
-    name: "My Library Account",
-    href: "https://holmes.lib.miamioh.edu/patroninfo.html",
-  },
-  {
-    name: "Give",
-    href: "https://www.givetomiamioh.org/s/916/16/interior-flah.aspx?sid=916&gid=1&pgid=5141",
-  },
+export const FooterMenu = [
+  [
+    { name: "Libraries & Collections" },
+    { name: "King Library", href: "/king-library" },
+    { name: "Wertz Art & Architecture Library", href: "/art-arch" },
+    {
+      name: "Special Collections and University Archives",
+      href: "/special-collections-archives",
+    },
+    { name: "Regional Libraries", href: "/regional" },
+  ],
+  [
+    { name: "Policies" },
+    { name: "Policies", href: "/about/organization/policies" },
+    { name: "Frequently Asked Questions", href: "/about/organization/faqs" },
+    {
+      name: "Accessibility Services",
+      href: "/research/instruction/accessibility",
+    },
+    { name: "Website Feedback", href: "/website-feedback", addLineAfter: true },
+  ],
+  [
+    { name: "Account" },
+    {
+      name: "Staff Area",
+      href: "/user",
+    },
+    {
+      name: "My Library Account",
+      href: "https://holmes.lib.miamioh.edu/patroninfo.html",
+    },
+  ],
 ];

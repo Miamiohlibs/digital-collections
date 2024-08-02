@@ -2,31 +2,31 @@
 
 const categories = [
   {
-    name: "New Arrivals",
+    name: "K-12 Curriculum Guides",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg",
   },
   {
-    name: "Productivity",
+    name: "Freedom Summer Digital Collection",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg",
   },
   {
-    name: "Workspace",
+    name: "Freedom Summer Finding Aid",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg",
   },
   {
-    name: "Accessories",
+    name: "Training for Freedom",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg",
   },
   {
-    name: "Sale",
+    name: "Celebrating Freedom",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg",
@@ -74,7 +74,7 @@ export default function Home() {
         <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
           <img
             alt=""
-            src="https://livedmu.lib.miamioh.edu/assets/img/carousel/Watch-main-cut.png"
+            src="/Unity_01_Replace.jpg"
             className="h-full w-full object-cover object-center"
           />
         </div>
@@ -174,7 +174,7 @@ export default function Home() {
             <div className="absolute inset-0">
               <img
                 alt=""
-                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
+                src="/Courage_04.jpg"
                 className="h-full w-full object-cover object-center"
               />
             </div>
@@ -258,7 +258,7 @@ export default function Home() {
             <div className="absolute inset-0">
               <img
                 alt=""
-                src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-02.jpg"
+                src="/Contribute_01_New.jpg"
                 className="h-full w-full object-cover object-center"
               />
             </div>
