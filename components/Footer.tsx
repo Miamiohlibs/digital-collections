@@ -14,10 +14,10 @@ export default function Footer() {
           <div className="grid grid-cols-1">
             <img
               alt="Miami University Libraries Logo"
-              src="/Logos/MUL-white-white.png"
+              src="/Logos/MUL_white_white.png"
               className="h-20"
             />
-            <div className="mt-3 text-gray-300">
+            <div className="mt-3 text-gray-300 pl-6">
               <p className="library-address">
                 151 South Campus Avenue
                 <br />
@@ -30,6 +30,9 @@ export default function Footer() {
                   (513) 529-4141
                 </a>
               </p>
+              <br />
+              <p>Give to the Libraries</p>
+              <p>Miami University</p>
             </div>
           </div>
 

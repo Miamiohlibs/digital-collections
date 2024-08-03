@@ -63,7 +63,7 @@ export function Header() {
               {!mobileMenuOpen && (
                 <img
                   className="h-16 w-auto md:h-20 lg:h-24"
-                  src="https://www.lib.miamioh.edu/images/ULB-Logos/Primary/Full-color%20and%20white%20text/Digital/png/0721_PTier1_Libraries_HS_186KW_W_Digital.png"
+                  src="/Logos/MUL_red_white.png"
                   alt="MUL logo"
                 />
               )}
@@ -84,7 +84,7 @@ export function Header() {
 
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
             <Popover>
-              <PopoverButton className="flex items-center gap-x-1 text-xl font-normal text-gray-100">
+              <PopoverButton className="flex items-center gap-x-1 text-xl font-normal text-gray-100 nav-title">
                 Research and Support
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-300"
@@ -101,10 +101,10 @@ export function Header() {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 -translate-y-1"
               >
-                <PopoverPanel className="absolute inset-x-0 top-32 -z-10 bg-white shadow-lg ring-1 ring-gray-900/5">
+                <PopoverPanel className="absolute inset-x-0 top-[10.4rem] -z-10 bg-white shadow-lg ring-2 ring-gray-900/5">
                   <div
-                    className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8 bg-fixed 
-                corner-alumni bg-no-repeat bg-right-bottom"
+                    className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-16 xl:gap-x-8 
+                    bg-auto bg-no-repeat corner-alumni bg-right-bottom"
                   >
                     {ResearchMenu.map((menuGroup, index) => (
                       <div
@@ -156,8 +156,8 @@ export function Header() {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 -translate-y-1"
               >
-                <PopoverPanel className="absolute inset-x-0 top-32 -z-10 bg-white shadow-lg ring-1 ring-gray-900/5">
-                  <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
+                <PopoverPanel className="absolute inset-x-0 top-[10.4rem] -z-10 bg-white shadow-lg ring-1 ring-gray-900/5">
+                  <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-16 xl:gap-x-8">
                     {UseLibraryMenu.map((menuGroup, index) => (
                       <div
                         className="menu-group flex flex-col gap-y-3"
@@ -208,8 +208,8 @@ export function Header() {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 -translate-y-1"
               >
-                <PopoverPanel className="absolute inset-x-0 top-32 -z-10 bg-white shadow-lg ring-1 ring-gray-900/5">
-                  <div className="mx-auto grid max-w-7xl grid-cols-3 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
+                <PopoverPanel className="absolute inset-x-0 top-[10.4rem] -z-10 bg-white shadow-lg ring-1 ring-gray-900/5">
+                  <div className="mx-auto grid max-w-7xl grid-cols-3 gap-x-4 px-6 py-10 lg:px-16 xl:gap-x-8">
                     {AboutMenu.map((menuGroup, index) => (
                       <div
                         className="menu-group flex flex-col gap-y-3"

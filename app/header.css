@@ -26,6 +26,10 @@ header {
   padding: 0.5rem;
 }
 
+.nav-title {
+  font-family: "Adelle Regular", Georgia, "Times New Roman", serif;
+}
+
 .corner-alumni {
   background-image: url("/CornerImages/AlumniHallCornerImg.png");
 }
