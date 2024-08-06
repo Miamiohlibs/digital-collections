@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
+import GoogleSiteSearch from "@/components/GoogleSiteSearch";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import "./header.css";
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
+        {GoogleSiteSearch()}
         <Header />
         {children}
         <Footer />

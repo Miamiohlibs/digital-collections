@@ -25,15 +25,8 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <header className="relative isolate z-10 border-b-2">
-      <link
-        href="https://miamioh.edu/_hannonhill/_files/css/utility/webfonts.css"
-        media="all"
-        rel="stylesheet"
-        type="text/css"
-      />
       <nav aria-label="Global" className="mx-auto max-w-7xl p-6 lg:px-8">
         {/* Super Top Menu */}
         <div
