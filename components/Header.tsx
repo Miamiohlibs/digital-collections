@@ -84,7 +84,7 @@ export function Header() {
 
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
             <Popover>
-              <PopoverButton className="flex items-center gap-x-1 text-xl font-normal text-gray-100 nav-title">
+              <PopoverButton className="flex items-center xl:gap-x-1 text-xl xl:text-2xl text-gray-100 nav-title">
                 Research and Support
                 <ChevronDownIcon
                   className="h-5 w-5 flex-none text-gray-300"
@@ -139,10 +139,10 @@ export function Header() {
             </Popover>
 
             <Popover>
-              <PopoverButton className="flex items-center gap-x-1 text-xl font-normal text-gray-100">
+              <PopoverButton className="flex items-center xl:gap-x-1 text-xl xl:text-2xl font-normal text-gray-100 nav-title">
                 Use the Libraries
                 <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
+                  className="h-5 w-5 flex-none text-gray-300"
                   aria-hidden="true"
                 />
               </PopoverButton>
@@ -191,10 +191,10 @@ export function Header() {
             </Popover>
 
             <Popover>
-              <PopoverButton className="flex items-center gap-x-1 text-xl font-normal text-gray-100">
+              <PopoverButton className="flex items-center xl:gap-x-1 text-xl xl:text-2xl font-normal text-gray-100 nav-title">
                 About
                 <ChevronDownIcon
-                  className="h-5 w-5 flex-none text-gray-400"
+                  className="h-5 w-5 flex-none text-gray-300"
                   aria-hidden="true"
                 />
               </PopoverButton>
