@@ -20,11 +20,18 @@ import {
 } from "@headlessui/react";
 
 import HeaderMobile from "./HeaderMobile";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  GiftIcon,
+  MagnifyingGlassIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [siteSearchOpen, setSiteSearchOpen] = useState(false);
+
   return (
     <header className="relative isolate z-10 border-b-2">
       <nav aria-label="Global" className="mx-auto max-w-7xl p-6 lg:px-8">
@@ -36,13 +43,19 @@ export function Header() {
           {SuperTopMenu.map((supertopitem) => (
             <Link
               key={supertopitem.name}
-              className="text-sm text-white hover:text-gray-100"
+              className="text-sm text-white hover:text-gray-100 flex items-center"
               href={supertopitem.href}
             >
+              {"icon" in supertopitem ? (
+                <GiftIcon className="h-5 w-5 mr-1" />
+              ) : (
+                ""
+              )}
               {supertopitem.name}
             </Link>
           ))}
-          <button className="text-sm text-white hover:text-gray-100">
+          <button className="text-sm text-white hover:text-gray-100 flex items-center">
+            <MagnifyingGlassIcon className="h-5 w-5 mr-1" />
             Site Search
           </button>
         </div>

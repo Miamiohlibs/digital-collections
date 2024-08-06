@@ -7,6 +7,7 @@ export const SuperTopMenu = [
   {
     name: "Give",
     href: "https://www.givetomiamioh.org/s/916/16/interior-flah.aspx?sid=916&gid=1&pgid=5141",
+    icon: true,
   },
 ];
 
