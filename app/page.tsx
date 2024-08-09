@@ -64,24 +64,49 @@ const collections = [
       "Be more productive than enterprise project managers with a single piece of paper.",
   },
 ];
+const carousel = [
+  {
+    name: "Pic 1",
+    imageSrc: "/Unity_01_Replace.jpg",
+    imageAlt: "something",
+    description: "somthing",
+  },
+  {
+    name: "Pic 1",
+    imageSrc: "/Contribute_01_New.jpg",
+    imageAlt: "something",
+    description: "somthing",
+  },
+  {
+    name: "Pic 1",
+    imageSrc: "/Courage_04.jpg",
+    imageAlt: "something",
+    description: "somthing",
+  },
+];
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <>
       {/* Hero section */}
-      <div className="relative bg-gray-900">
+      <div className="relative mb-12">
         {/* Decorative image and overlay */}
-        <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
-          <img
-            alt=""
-            src="/Unity_01_Replace.jpg"
-            className="h-full w-full object-cover object-center"
-          />
+        <div aria-hidden="true" className="absolute inset-0">
+          <Carousel className="slider" infiniteLoop>
+            {carousel.map((imageItem) => (
+              <div className="h-[30rem] sm:h-[45rem]" key={imageItem.imageAlt}>
+                <img
+                  src={imageItem.imageSrc}
+                  alt={imageItem.imageAlt}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+            ))}
+          </Carousel>
         </div>
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gray-900 opacity-50"
-        />
 
         <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center sm:py-64 lg:px-0">
           <h1 className="text-4xl font-bold tracking-tight text-white lg:text-6xl">
@@ -116,7 +141,7 @@ export default function Home() {
             </h2>
             <a
               href="#"
-              className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+              className="hidden text-sm font-semibold text-red-800 hover:text-red-700 sm:block"
             >
               Browse all categories
               <span aria-hidden="true"> &rarr;</span>
@@ -287,6 +312,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }
