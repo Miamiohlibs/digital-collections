@@ -2,7 +2,7 @@
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { CAROUSEL, COLLECTIONS, RESOURCES } from "@/constant/staticInfo";
+import { CAROUSEL, COLLECTIONS, RESOURCES } from "@/constant/StaticInfo";
 import Stats from "@/components/Stats";
 import Text from "@/components/Testimonials";
 
