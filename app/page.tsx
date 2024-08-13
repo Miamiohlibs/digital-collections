@@ -1,92 +1,10 @@
 "use client";
 
-const categories = [
-  {
-    name: "K-12 Curriculum Guides",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg",
-  },
-  {
-    name: "Freedom Summer Digital Collection",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg",
-  },
-  {
-    name: "Freedom Summer Finding Aid",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg",
-  },
-  {
-    name: "Training for Freedom",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg",
-  },
-  {
-    name: "Celebrating Freedom",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg",
-  },
-];
-const collections = [
-  {
-    name: "Handcrafted Collection",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg",
-    imageAlt:
-      "Brown leather key ring with brass metal loops and rivets on wood table.",
-    description:
-      "Keep your phone, keys, and wallet together, so you can lose everything at once.",
-  },
-  {
-    name: "Organized Desk Collection",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg",
-    imageAlt:
-      "Natural leather mouse pad on white desk next to porcelain mug and keyboard.",
-    description:
-      "The rest of the house will still be a mess, but your desk will look great.",
-  },
-  {
-    name: "Focus Collection",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
-    imageAlt:
-      "Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.",
-    description:
-      "Be more productive than enterprise project managers with a single piece of paper.",
-  },
-];
-const carousel = [
-  {
-    name: "Pic 1",
-    imageSrc: "/Unity_01_Replace.jpg",
-    imageAlt: "something",
-    description: "somthing",
-  },
-  {
-    name: "Pic 1",
-    imageSrc: "/Contribute_01_New.jpg",
-    imageAlt: "something",
-    description: "somthing",
-  },
-  {
-    name: "Pic 1",
-    imageSrc: "/Courage_04.jpg",
-    imageAlt: "something",
-    description: "somthing",
-  },
-];
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { CAROUSEL, COLLECTIONS, RESOURCES } from "@/constant/staticInfo";
+import Stats from "@/components/Stats";
+import Text from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -96,7 +14,7 @@ export default function Home() {
         {/* Decorative image and overlay */}
         <div aria-hidden="true" className="absolute inset-0">
           <Carousel className="slider" infiniteLoop>
-            {carousel.map((imageItem) => (
+            {CAROUSEL.map((imageItem) => (
               <div className="h-[30rem] sm:h-[45rem]" key={imageItem.imageAlt}>
                 <img
                   src={imageItem.imageSrc}
@@ -127,7 +45,7 @@ export default function Home() {
       </div>
 
       <main>
-        {/* Category section */}
+        {/* Resources section */}
         <section
           aria-labelledby="category-heading"
           className="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8"
@@ -143,7 +61,7 @@ export default function Home() {
               href="#"
               className="hidden text-sm font-semibold text-red-800 hover:text-red-700 sm:block"
             >
-              Browse all categories
+              Browse all related resoources
               <span aria-hidden="true"> &rarr;</span>
             </a>
           </div>
@@ -152,7 +70,7 @@ export default function Home() {
             <div className="-my-2">
               <div className="relative box-content h-80 overflow-x-auto py-2 xl:overflow-visible">
                 <div className="absolute flex space-x-8 px-4 sm:px-6 lg:px-8 xl:relative xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-x-0 xl:px-0">
-                  {categories.map((category) => (
+                  {RESOURCES.map((category) => (
                     <a
                       key={category.name}
                       href={category.href}
@@ -190,10 +108,13 @@ export default function Home() {
           </div>
         </section>
 
+        <section>
+          <Stats />
+        </section>
         {/* Featured section */}
         <section
           aria-labelledby="social-impact-heading"
-          className="mx-auto max-w-7xl px-4 pt-24 sm:px-6 sm:pt-32 lg:px-8"
+          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
@@ -247,7 +168,7 @@ export default function Home() {
           </p>
 
           <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
-            {collections.map((collection) => (
+            {COLLECTIONS.map((collection) => (
               <a
                 key={collection.name}
                 href={collection.href}
@@ -274,10 +195,12 @@ export default function Home() {
           </div>
         </section>
 
+        <Text />
+
         {/* Featured section */}
         <section
           aria-labelledby="comfort-heading"
-          className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8"
+          className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:pb-32 lg:px-8"
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
