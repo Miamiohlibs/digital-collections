@@ -1,31 +1,31 @@
 export const RESOURCES = [
   {
-    name: "K-12 Curriculum Guides",
-    href: "#",
+    name: "Freedom Summer LibGuides",
+    href: "https://libguides.lib.miamioh.edu/FreedomSummer/collections",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg",
   },
   {
-    name: "Freedom Summer Digital Collection",
-    href: "#",
+    name: "Stories of Freedom Summer from the Western College Archives",
+    href: "https://spec.lib.miamioh.edu/longform/freedomsummer/",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg",
   },
   {
-    name: "Freedom Summer Finding Aid",
-    href: "#",
+    name: "Freedom Summer App An Interactive Quest for Social Justice",
+    href: "https://fsapp.lib.miamioh.edu/",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg",
   },
   {
-    name: "Training for Freedom",
+    name: "Freedom Summer Memorial",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg",
   },
   {
-    name: "Celebrating Freedom",
-    href: "#",
+    name: "Telling A People’s Story Miami University Art Museum",
+    href: "https://www.miamioh.edu/cca/art-museum/exhibitions/past-exhibitions/18spr-telling-a-peoples-story/index.html",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg",
   },

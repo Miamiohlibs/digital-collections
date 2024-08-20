@@ -71,3 +71,15 @@
     @apply no-underline hover:underline;
   }
 }
+
+/* Carousel Styles */
+ul.thumbs.animated {
+  @apply flex justify-center;
+}
+
+/* Statistic Text */
+
+.stat-text {
+  font-family: Gotham Ultra;
+  -webkit-text-stroke: 2px rgba(196, 18, 48, 1);
+}

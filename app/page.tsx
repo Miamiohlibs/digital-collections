@@ -100,7 +100,7 @@ export default function Home() {
           <div className="mt-6 px-4 sm:hidden">
             <a
               href="#"
-              className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+              className="block text-sm font-semibold text-red-800 hover:text-red-700"
             >
               Browse All Categories
               <span aria-hidden="true"> &rarr;</span>
@@ -133,11 +133,11 @@ export default function Home() {
                   <span className="block sm:inline">Introduction</span>
                 </h2>
                 <p className="mt-3 text-xl text-white">
-                  Lived Experiences Through Storytelling: Race at Miami
-                  University is a collaborative storytelling project that
-                  chronicles the history of racial dynamics at Miami University
-                  through documentaries, oral histories, and archival stories of
-                  students, alumni, faculty, and staff of color.
+                  The Freedom Summer Digital Archive began in 2009 with a grant
+                  from the Ohio Humanities Council, the Miami University
+                  Libraries, and through the generous support of Catherine
+                  Ross-Loveland, a 1952 graduate of the Western College for
+                  Women.
                 </p>
                 <a
                   href="#"
