@@ -1,8 +1,8 @@
 const stats = [
-  { id: 1, name: "Transactions every 24 hours", value: "44 million" },
-  { id: 2, name: "Transactions every 24 hours", value: "44 million" },
-  { id: 3, name: "Assets under holding", value: "$119 trillion" },
-  { id: 4, name: "New users annually", value: "46,000" },
+  { id: 1, name: "pages", value: "844" },
+  { id: 2, name: "photographs", value: "212" },
+  { id: 3, name: "videos", value: "59" },
+  { id: 4, name: "sound recordings", value: "11" },
 ];
 
 export default function Stats() {
@@ -15,8 +15,8 @@ export default function Stats() {
               key={stat.id}
               className="mx-auto flex max-w-xs flex-col gap-y-4"
             >
-              <dt className="text-gray-800">{stat.name}</dt>
-              <dd className="order-first text-4xl text-white sm:text-5xl stat-text">
+              <dt className="text-gray-800 text-2xl">{stat.name}</dt>
+              <dd className="order-first text-7xl text-white sm:text-8xl stat-text">
                 {stat.value}
               </dd>
             </div>

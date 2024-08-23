@@ -72,6 +72,10 @@
   }
 }
 
+.underlineLink{
+  @apply text-red-800 underline hover:text-red-700
+}
+
 /* Carousel Styles */
 ul.thumbs.animated {
   @apply flex justify-center;
@@ -80,6 +84,6 @@ ul.thumbs.animated {
 /* Statistic Text */
 
 .stat-text {
-  font-family: Gotham Ultra;
+  font-family: Gotham Black;
   -webkit-text-stroke: 2px rgba(196, 18, 48, 1);
 }

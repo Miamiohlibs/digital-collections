@@ -3,6 +3,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL, COLLECTIONS, RESOURCES } from "@/constant/StaticInfo";
+import Description from "@/components/Description";
 import Stats from "@/components/Stats";
 import Text from "@/components/Testimonials";
 
@@ -31,15 +32,17 @@ export default function Home() {
             Finding Freedom
           </h1>
           <p className="mt-4 text-xl text-white">
-            The new arrivals have, well, newly arrived. Check out the latest
-            options from our summer small-batch release while they are still in
-            stock.
+            The Freedom Summer Digital Archive brings together over 1,100 sound
+            recordings, newspaper articles, photographs, correspondence, and
+            other primary sources relating to the Mississippi Summer Project,
+            the 1964 African American voter registration drive later known as
+            Freedom Summer.
           </p>
           <a
             href="#"
             className="mt-8 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100"
           >
-            Read More
+            Explore the Collection
           </a>
         </div>
       </div>
@@ -111,6 +114,11 @@ export default function Home() {
         <section>
           <Stats />
         </section>
+
+        <section>
+          <Description />
+        </section>
+
         {/* Featured section */}
         <section
           aria-labelledby="social-impact-heading"
@@ -161,11 +169,6 @@ export default function Home() {
           >
             Related Collections
           </h2>
-          <p className="mt-4 text-base text-gray-500">
-            At the heart of the project are the lived experiences of the past
-            and present who have shared their experiences while providing
-            resources for teaching, studying and learning.
-          </p>
 
           <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
             {COLLECTIONS.map((collection) => (
@@ -211,18 +214,28 @@ export default function Home() {
               />
             </div>
             <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
-              <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
+              <div className="relative mx-auto flex max-w-3xl flex-col items-center">
                 <h2
                   id="comfort-heading"
-                  className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                  className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center"
                 >
-                  About Digital Collections
+                  History
                 </h2>
                 <p className="mt-3 text-xl text-white">
-                  Endless tasks, limited hours, a single piece of paper. Not
-                  really a haiku, but we are doing our best here. No kanban
-                  boards, burndown charts, or tangled flowcharts with our Focus
-                  system. Just the undeniable urge to fill empty circles.
+                  Mississippi Summer Project took place on Oxford, Ohio’s,
+                  Western College campus in June 1964. Its participants, about
+                  800 northern college students, learned about history and
+                  politics in the South while preparing to register African
+                  Americans to vote and to encourage a new political party. At
+                  the time, Black Mississippians were barred from Democratic
+                  party primaries and caucuses, and the movement sought to
+                  challenge the party’s all-white delegation at the Democratic
+                  National Convention that August. Three of those trainees,
+                  Michael Schwerner, James Chaney and Andrew Goodman would be
+                  murdered by the Ku Klux Klan after beginning their work in
+                  Mississippi. These murders focused national and international
+                  attention on the efforts of Freedom Summer, serving as a
+                  turning point for the civil rights movement.
                 </p>
                 <a
                   href="#"

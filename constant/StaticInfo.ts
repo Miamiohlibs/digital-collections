@@ -3,31 +3,31 @@ export const RESOURCES = [
     name: "Freedom Summer LibGuides",
     href: "https://libguides.lib.miamioh.edu/FreedomSummer/collections",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg",
+      "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Books%20and%20Documentaries.jpg",
   },
   {
-    name: "Stories of Freedom Summer from the Western College Archives",
+    name: "Finding Freedom Summer Traveling Exhibit",
     href: "https://spec.lib.miamioh.edu/longform/freedomsummer/",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg",
+      "https://findingfreedom.lib.miamioh.edu/assets/images/Complete/Bravery_03_Replace.jpg",
   },
   {
-    name: "Freedom Summer App An Interactive Quest for Social Justice",
+    name: "Freedom Summer App",
     href: "https://fsapp.lib.miamioh.edu/",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg",
   },
   {
     name: "Freedom Summer Memorial",
-    href: "#",
+    href: "https://artoncampus.lib.miamioh.edu/freedom-summer-64-memorial-and-the-50th-anniversary-sculptures?_ga=2.232145631.116480752.1724351843-2055157657.1620069425",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg",
+      "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Freedom%20Summer%20at%20Miami%20University.jpg",
   },
   {
-    name: "Telling A People’s Story Miami University Art Museum",
+    name: "Telling A People’s Story",
     href: "https://www.miamioh.edu/cca/art-museum/exhibitions/past-exhibitions/18spr-telling-a-peoples-story/index.html",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg",
+      "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Organizations%20and%20Archives.jpg",
   },
 ];
 export const COLLECTIONS = [
@@ -52,14 +52,14 @@ export const COLLECTIONS = [
       "The rest of the house will still be a mess, but your desk will look great.",
   },
   {
-    name: "Focus Collection",
+    name: "Race at Miami",
     href: "#",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
     imageAlt:
       "Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.",
     description:
-      "Be more productive than enterprise project managers with a single piece of paper.",
+      "Collection of documents from the Miami University Archives relating to race at Miami University, with special emphasis on the experiences of Black faculty, students, and staff.",
   },
 ];
 export const CAROUSEL = [
