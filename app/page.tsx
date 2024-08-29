@@ -3,7 +3,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL, COLLECTIONS, RESOURCES } from "@/constant/StaticInfo";
-import Description from "@/components/Description";
+import About from "@/components/About";
 import Stats from "@/components/Stats";
 import Text from "@/components/Testimonials";
 
@@ -115,8 +115,8 @@ export default function Home() {
           <Stats />
         </section>
 
-        <section>
-          <Description />
+        <section className="pb-4 lg:pb-24">
+          <About />
         </section>
 
         {/* Featured section */}
@@ -129,7 +129,7 @@ export default function Home() {
               <img
                 alt=""
                 src="/Courage_04.jpg"
-                className="h-full w-full object-cover object-center"
+                className="h-full aspect-[5/2] object-cover object-center"
               />
             </div>
             <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">

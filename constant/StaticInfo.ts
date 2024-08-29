@@ -32,34 +32,33 @@ export const RESOURCES = [
 ];
 export const COLLECTIONS = [
   {
-    name: "Handcrafted Collection",
-    href: "#",
+    name: "African Americans at Miami University",
+    href: "https://digital.lib.miamioh.edu/digital/collection/afamhist/search",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg",
-    imageAlt:
-      "Brown leather key ring with brass metal loops and rivets on wood table.",
+      "https://www.lib.miamioh.edu/images/spec-coll-collections/African_american_collection2.jpg",
+    imageAlt: ".",
     description:
-      "Keep your phone, keys, and wallet together, so you can lose everything at once.",
+      "Documents the history of African Americans at Miami University through newspaper articles, photographs, and other media between 1868 and 2004.",
   },
   {
-    name: "Organized Desk Collection",
-    href: "#",
+    name: "Race at Miami University",
+    href: "https://digital.lib.miamioh.edu/digital/collection/race/search",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg",
+      "https://www.lib.miamioh.edu/images/spec-coll-collections/RaceAtMiami_800px.jpg",
     imageAlt:
       "Natural leather mouse pad on white desk next to porcelain mug and keyboard.",
     description:
-      "The rest of the house will still be a mess, but your desk will look great.",
+      "Collection of documents from the Miami University Archives relating to race at Miami University, with special emphasis on the experiences of Black faculty, students, and staff.  ",
   },
   {
-    name: "Race at Miami",
-    href: "#",
+    name: "Miami Student Activism",
+    href: "https://cdm17240.contentdm.oclc.org/digital/collection/activism/search",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
+      "https://www.lib.miamioh.edu/images/spec-coll-collections/Miami_StudentActivism_800px.jpg",
     imageAlt:
       "Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.",
     description:
-      "Collection of documents from the Miami University Archives relating to race at Miami University, with special emphasis on the experiences of Black faculty, students, and staff.",
+      "Documents and publications relating to student activism at Miami University.",
   },
 ];
 export const CAROUSEL = [

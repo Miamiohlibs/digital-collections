@@ -1,8 +1,8 @@
 const stats = [
-  { id: 1, name: "pages", value: "844" },
-  { id: 2, name: "photographs", value: "212" },
-  { id: 3, name: "videos", value: "59" },
-  { id: 4, name: "sound recordings", value: "11" },
+  { id: 1, name: "Pages", value: "844" },
+  { id: 2, name: "Photographs", value: "212" },
+  { id: 3, name: "Videos", value: "59" },
+  { id: 4, name: "Sound Recordings", value: "11" },
 ];
 
 export default function Stats() {

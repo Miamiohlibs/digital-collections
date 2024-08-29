@@ -1,6 +1,6 @@
 import Statements from "./Statements";
 
-const Description = () => {
+const About = () => {
   return (
     <div className="mx-auto max-w-7xl px-6 sm:mt-0 lg:px-8">
       <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
@@ -18,7 +18,7 @@ const Description = () => {
               Miami University, originally part of the Western College Memorial
               Archives.
             </p>
-            <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
+            <div className="mt-10 pr-4 text-base leading-6 text-gray-700">
               <p>
                 The Freedom Summer Digital Archive was funded by the Ohio
                 Humanities Council, Miami University Libraries, and through the
@@ -36,17 +36,8 @@ const Description = () => {
           </div>
         </div>
       </div>
-
-      {/* Image section */}
-      <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-          className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
-        />
-      </div>
     </div>
   );
 };
 
-export default Description;
+export default About;
