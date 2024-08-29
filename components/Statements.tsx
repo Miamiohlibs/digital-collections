@@ -51,12 +51,6 @@ const Statements = () => {
           </Disclosure>
         </dl>
       </div>
-      <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-        <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
-          Search
-        </h2>
-        <form></form>
-      </div>
     </div>
   );
 };
