@@ -65,19 +65,19 @@ export const CAROUSEL = [
   {
     name: "Pic 1",
     imageSrc: "/Unity_01_Replace.jpg",
-    imageAlt: "something",
-    description: "somthing",
+    imageAlt: "something about imageAlt",
+    description: "somthing from description",
   },
   {
     name: "Pic 1",
     imageSrc: "/Contribute_01_New.jpg",
     imageAlt: "something",
-    description: "somthing",
+    description: "somthing on description",
   },
   {
     name: "Pic 1",
     imageSrc: "/Courage_04.jpg",
     imageAlt: "something",
-    description: "somthing",
+    description: "somthing about description",
   },
 ];

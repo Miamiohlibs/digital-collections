@@ -3,6 +3,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
+import Search from "./Search";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
 const About = () => {
@@ -31,46 +32,57 @@ const About = () => {
             </p>
           </div>
 
-          <div className="max-w-3xl lg:max-w-lg divide-y divide-gray-900/10">
-            <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
-              Statements
-            </h2>
-            <dl className="mt-4 lg:mt-8 space-y-6 divide-y divide-gray-900/10">
-              <Disclosure as="div" className="pt-6">
-                <dt>
-                  <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900">
-                    <span className="text-base font-semibold leading-7">
-                      Digitalization Satatement
-                    </span>
-                    <span className="ml-6 flex h-7 items-center">
-                      <PlusIcon
-                        aria-hidden="true"
-                        className="h-6 w-6 group-data-[open]:hidden"
-                      />
-                      <MinusIcon
-                        aria-hidden="true"
-                        className="h-6 w-6 [.group:not([data-open])_&]:hidden"
-                      />
-                    </span>
-                  </DisclosureButton>
-                </dt>
-                <DisclosurePanel as="dd" className="mt-2 pr-12">
-                  <p className="text-base leading-7 text-gray-600">
-                    Only a portion of Miami University’s Freedom Summer Archive
-                    has been digitized. Researchers are encouraged to explore
-                    the full collection housed at the Walter Havighurst Special
-                    Collections & University Archives using the{" "}
-                    <a
-                      href="https://archivesspace.lib.miamioh.edu/repositories/2/archival_objects/21880"
-                      className="underlineLink"
-                    >
-                      collection finding aid
-                    </a>
-                    .
-                  </p>
-                </DisclosurePanel>
-              </Disclosure>
-            </dl>
+          <div className="w-full max-w-[600px] divide-y divide-gray-900/10">
+            {/* Search */}
+            <div key="search">
+              <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+                Search
+              </h2>
+              <Search />
+            </div>
+            {/* Statements */}
+            <div key="statements" className="mt-2 lg:mt-8">
+              <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900 mt-4">
+                Statements
+              </h2>
+              <dl className="mt-2">
+                <Disclosure as="div">
+                  <dt>
+                    <DisclosureButton className="group flex w-full items-start justify-between text-gray-900">
+                      <span className="text-base font-semibold leading-7">
+                        Digitalization Satatement
+                      </span>
+                      <span className="ml-6 flex h-7 items-center">
+                        <PlusIcon
+                          aria-hidden="true"
+                          className="h-6 w-6 group-data-[open]:hidden"
+                        />
+                        <MinusIcon
+                          aria-hidden="true"
+                          className="h-6 w-6 [.group:not([data-open])_&]:hidden"
+                        />
+                      </span>
+                    </DisclosureButton>
+                  </dt>
+                  <DisclosurePanel as="dd" className="mt-2 pr-12">
+                    <p className="text-base leading-7 text-gray-600">
+                      Only a portion of Miami University’s Freedom Summer
+                      Archive has been digitized. Researchers are encouraged to
+                      explore the full collection housed at the Walter
+                      Havighurst Special Collections & University Archives using
+                      the{" "}
+                      <a
+                        href="https://archivesspace.lib.miamioh.edu/repositories/2/archival_objects/21880"
+                        className="underlineLink"
+                      >
+                        collection finding aid
+                      </a>
+                      .
+                    </p>
+                  </DisclosurePanel>
+                </Disclosure>
+              </dl>
+            </div>
           </div>
         </div>
       </div>

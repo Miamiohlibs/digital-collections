@@ -5,49 +5,55 @@ import { Carousel } from "react-responsive-carousel";
 import { CAROUSEL, COLLECTIONS, RESOURCES } from "@/constant/StaticInfo";
 import About from "@/components/About";
 import Stats from "@/components/Stats";
-import Text from "@/components/Testimonials";
+import Link from "next/link";
+import History from "@/components/History";
 
 export default function Home() {
   return (
     <>
       {/* Hero section */}
-      <div className="relative mb-12">
+      <div className="relative">
         {/* Decorative image and overlay */}
-        <div aria-hidden="true" className="absolute inset-0">
-          <Carousel className="slider" infiniteLoop>
+        <div aria-hidden="true" className="absolute inset-0 ">
+          <Carousel className="slider " infiniteLoop>
             {CAROUSEL.map((imageItem) => (
-              <div className="h-[30rem] sm:h-[45rem]" key={imageItem.imageAlt}>
+              <div className="h-[30rem] sm:h-[45rem] " key={imageItem.imageAlt}>
                 <img
                   src={imageItem.imageSrc}
                   alt={imageItem.imageAlt}
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center "
                 />
+                <p className="legend">
+                  <span className="text-base">
+                    Description: {imageItem.description}
+                  </span>
+                </p>
               </div>
             ))}
           </Carousel>
         </div>
 
-        <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center sm:py-64 lg:px-0">
-          <h1 className="text-4xl font-bold tracking-tight text-white lg:text-6xl">
+        <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center text-white h-[30rem] sm:h-[45rem] ">
+          <h1 className="text-4xl font-bold tracking-tight lg:text-6xl">
             Finding Freedom
           </h1>
-          <p className="mt-4 text-xl text-white">
+          <p className="text-lg sm:text-xl bg-stone-800 bg-opacity-65 leading-7 sm:leading-9 p-4 rounded-3xl">
             The Freedom Summer Digital Archive brings together over 1,100 sound
             recordings, newspaper articles, photographs, correspondence, and
             other primary sources relating to the Mississippi Summer Project,
             the 1964 African American voter registration drive later known as
             Freedom Summer.
           </p>
-          <a
+          <Link
             href="#"
-            className="mt-8 inline-block rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100"
+            className="rounded-md px-8 py-3 bg-white text-base font-medium text-gray-900 hover:bg-gray-100"
           >
             Explore the Collection
-          </a>
+          </Link>
         </div>
       </div>
 
-      <main>
+      <main className="mt-12 sm:mt-0 grid gap-y-32">
         {/* Resources section */}
         <section
           aria-labelledby="category-heading"
@@ -60,54 +66,49 @@ export default function Home() {
             >
               Related Resources
             </h2>
-            <a
+            <Link
               href="#"
               className="hidden text-sm font-semibold text-red-800 hover:text-red-700 sm:block"
             >
               Browse all related resoources
               <span aria-hidden="true"> &rarr;</span>
-            </a>
+            </Link>
           </div>
 
           <div className="mt-4 flow-root">
-            <div className="-my-2">
-              <div className="relative box-content h-80 overflow-x-auto py-2 xl:overflow-visible">
-                <div className="absolute flex space-x-8 px-4 sm:px-6 lg:px-8 xl:relative xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-x-0 xl:px-0">
-                  {RESOURCES.map((category) => (
-                    <a
-                      key={category.name}
-                      href={category.href}
-                      className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
-                    >
-                      <span aria-hidden="true" className="absolute inset-0">
-                        <img
-                          alt=""
-                          src={category.imageSrc}
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </span>
-                      <span
-                        aria-hidden="true"
-                        className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
+            <div className="relative box-content h-[20.5rem] overflow-x-auto py-2 xl:overflow-visible">
+              <div className="absolute flex space-x-8 px-4 sm:px-6 lg:px-8 xl:relative xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-x-0 xl:px-0">
+                {RESOURCES.map((category) => (
+                  <Link
+                    key={category.name}
+                    href={category.href}
+                    className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
+                  >
+                    <span aria-hidden="true" className="absolute inset-0">
+                      <img
+                        alt=""
+                        src={category.imageSrc}
+                        className="h-full w-full object-cover object-center"
                       />
-                      <span className="relative mt-auto text-center text-xl font-bold text-white">
-                        {category.name}
-                      </span>
-                    </a>
-                  ))}
-                </div>
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
+                    />
+                    <span className="relative mt-auto text-center text-xl font-bold text-white">
+                      {category.name}
+                    </span>
+                  </Link>
+                ))}
               </div>
             </div>
-          </div>
-
-          <div className="mt-6 px-4 sm:hidden">
-            <a
+            <Link
               href="#"
-              className="block text-sm font-semibold text-red-800 hover:text-red-700"
+              className="text-sm pl-4 font-semibold text-red-800 hover:text-red-700 block sm:hidden"
             >
-              Browse All Categories
+              Browse all related resoources
               <span aria-hidden="true"> &rarr;</span>
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -115,24 +116,24 @@ export default function Home() {
           <Stats />
         </section>
 
-        <section className="pb-4 lg:pb-24">
+        <section className="pb-4">
           <About />
         </section>
 
         {/* Featured section */}
         <section
           aria-labelledby="social-impact-heading"
-          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
+          className="w-full px-4 sm:px-6 lg:px-8"
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
               <img
                 alt=""
                 src="/Courage_04.jpg"
-                className="h-full aspect-[5/2] object-cover object-center"
+                className="mx-auto h-full aspect-[5/2] object-cover"
               />
             </div>
-            <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
+            <div className="relative bg-stone-800 bg-opacity-65 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
               <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
                 <h2
                   id="social-impact-heading"
@@ -161,7 +162,7 @@ export default function Home() {
         {/* Collection section */}
         <section
           aria-labelledby="collection-heading"
-          className="mx-auto max-w-xl px-4 pt-24 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8"
+          className="mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8"
         >
           <h2
             id="collection-heading"
@@ -198,51 +199,33 @@ export default function Home() {
           </div>
         </section>
 
-        <Text />
+        <History />
 
         {/* Featured section */}
-        <section
-          aria-labelledby="comfort-heading"
-          className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:pb-32 lg:px-8"
-        >
+        <section aria-labelledby="comfort-heading" className="w-full mb-32 px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
               <img
                 alt=""
                 src="/Contribute_01_New.jpg"
-                className="h-full w-full object-cover object-center"
+                className="mx-auto h-full aspect-[5/2] object-cover"
               />
             </div>
-            <div className="relative bg-gray-900 bg-opacity-75 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
+            <div className="relative bg-stone-800 bg-opacity-65 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
               <div className="relative mx-auto flex max-w-3xl flex-col items-center">
                 <h2
                   id="comfort-heading"
-                  className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center"
+                  className="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl text-center"
                 >
-                  History
+                  Need research help?
                 </h2>
-                <p className="mt-3 text-xl text-white">
-                  Mississippi Summer Project took place on Oxford, Ohio’s,
-                  Western College campus in June 1964. Its participants, about
-                  800 northern college students, learned about history and
-                  politics in the South while preparing to register African
-                  Americans to vote and to encourage a new political party. At
-                  the time, Black Mississippians were barred from Democratic
-                  party primaries and caucuses, and the movement sought to
-                  challenge the party’s all-white delegation at the Democratic
-                  National Convention that August. Three of those trainees,
-                  Michael Schwerner, James Chaney and Andrew Goodman would be
-                  murdered by the Ku Klux Klan after beginning their work in
-                  Mississippi. These murders focused national and international
-                  attention on the efforts of Freedom Summer, serving as a
-                  turning point for the civil rights movement.
-                </p>
-                <a
+
+                <Link
                   href="#"
                   className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                 >
-                  Browse All
-                </a>
+                  Contact us
+                </Link>
               </div>
             </div>
           </div>
