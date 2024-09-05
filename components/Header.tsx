@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import {
   ResearchMenu,
   UseLibraryMenu,
@@ -29,12 +29,44 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export function Header() {
+  const divRef = useRef(null); // Reference for the div
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [siteSearchOpen, setSiteSearchOpen] = useState(false);
+
+  // Toggle search handler
+  const toggleSearch = () => {
+    setSiteSearchOpen(!siteSearchOpen);
+  };
+
+  // Added useEffect to initialize the Google CSE script properly
+  useEffect(() => {
+    if (siteSearchOpen && divRef.current) {
+      // Inject the search only when the search is open and the div is mounted
+      const script = document.createElement("script");
+      script.src = "https://cse.google.com/cse.js?cx=d11ec13d3a7b04466";
+      script.async = true;
+      divRef.current.appendChild(script); // Ensure script loads only when needed
+      const divNode = document.createElement("div");
+      divNode.classList.add("gcse-search");
+      divRef.current.appendChild(divNode);
+    }
+
+    // Cleanup script when component unmounts or when the search is closed
+    return () => {
+      if (divRef.current) {
+        while (divRef.current.firstChild) {
+          divRef.current.removeChild(divRef.current.firstChild);
+        }
+      }
+    };
+  }, [siteSearchOpen]); // Re-run when `siteSearchOpen` changes
 
   return (
     <header className="relative isolate z-10 border-b-2">
       <nav aria-label="Global" className="mx-auto max-w-7xl p-6 lg:px-8">
+        {/* Keep divRef as for Google search bar div */}
+        <div ref={divRef}></div>
         {/* Super Top Menu */}
         <div
           className="hidden lg:flex space-x-1 justify-end SuperTopMenuMain"
@@ -54,10 +86,23 @@ export function Header() {
               {supertopitem.name}
             </Link>
           ))}
-          <button className="text-sm text-white hover:text-gray-100 flex items-center">
-            <MagnifyingGlassIcon className="h-5 w-5 mr-1" />
-            Site Search
-          </button>
+          {siteSearchOpen ? (
+            <button
+              className="text-sm text-white hover:text-gray-100 flex items-center"
+              onClick={toggleSearch}
+            >
+              <XMarkIcon aria-hidden="true" className="h-5 w-5 mr-1" />
+              Close
+            </button>
+          ) : (
+            <button
+              className="text-sm text-white hover:text-gray-100 flex items-center"
+              onClick={toggleSearch}
+            >
+              <MagnifyingGlassIcon className="h-5 w-5 mr-1" />
+              Site Search
+            </button>
+          )}
         </div>
         {/* End of Super Top */}
 

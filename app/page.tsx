@@ -202,7 +202,10 @@ export default function Home() {
         <History />
 
         {/* Featured section */}
-        <section aria-labelledby="comfort-heading" className="w-full mb-32 px-4 sm:px-6 lg:px-8">
+        <section
+          aria-labelledby="comfort-heading"
+          className="w-full mb-32 px-4 sm:px-6 lg:px-8"
+        >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
               <img
@@ -222,7 +225,7 @@ export default function Home() {
 
                 <Link
                   href="#"
-                  className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+                  className="mt-8 rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                 >
                   Contact us
                 </Link>
