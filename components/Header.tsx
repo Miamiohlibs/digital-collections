@@ -88,7 +88,7 @@ export function Header() {
           ))}
           {siteSearchOpen ? (
             <button
-              className="text-sm text-white hover:text-gray-100 flex items-center"
+              className="text-sm text-white hover:underline flex items-center"
               onClick={toggleSearch}
             >
               <XMarkIcon aria-hidden="true" className="h-5 w-5 mr-1" />
@@ -96,7 +96,7 @@ export function Header() {
             </button>
           ) : (
             <button
-              className="text-sm text-white hover:text-gray-100 flex items-center"
+              className="text-sm text-white hover:underline flex items-center"
               onClick={toggleSearch}
             >
               <MagnifyingGlassIcon className="h-5 w-5 mr-1" />
