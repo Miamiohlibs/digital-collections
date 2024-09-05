@@ -1,30 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Search() {
   const [inputValue, setInputValue] = useState("");
 
-  function handleSubmit() {
-    const baseUrlMU = "https://digital.lib.miamioh.edu/digital/search";
-    const newUrl = `${baseUrlMU}${inputValue}`;
-
-    // Redirect to the new URL
-    redirect(newUrl);
-  }
-
   return (
     <div className="max-w-7xl gap-10 lg:grid-cols-12 lg:gap-8">
-      <form className="w-full lg:pt-2" onSubmit={handleSubmit}>
+      <form
+        className="w-full lg:pt-2"
+        action={`https://digital.lib.miamioh.edu/digital/search/searchterm/${inputValue}`}
+      >
         <div className="flex gap-x-4">
           <label htmlFor="search-terms" className="sr-only">
             Search
           </label>
           <input
-            id="search-terms"
-            name="searchterm"
             value={inputValue}
             type="text"
             required
