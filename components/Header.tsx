@@ -29,7 +29,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 export function Header() {
-  const divRef = useRef(null); // Reference for the div
+  const divRef = useRef<HTMLDivElement>(null); // Reference for the div
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [siteSearchOpen, setSiteSearchOpen] = useState(false);
