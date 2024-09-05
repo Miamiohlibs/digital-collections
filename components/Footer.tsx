@@ -50,9 +50,7 @@ export default function Footer() {
                     >
                       {"name" in menuItem ? (
                         menuItem.href ? (
-                          <Link href={`/research${menuItem.href}`}>
-                            {menuItem.name}
-                          </Link>
+                          <Link href={menuItem.href}>{menuItem.name}</Link>
                         ) : (
                           <span className="font-semibold text-gray-100">
                             {menuItem.name}

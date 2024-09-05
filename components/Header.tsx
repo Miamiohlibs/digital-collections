@@ -169,9 +169,15 @@ export function Header() {
                           >
                             {"name" in menuItem ? (
                               menuItem.href ? (
-                                <Link href={`/research${menuItem.href}`}>
-                                  {menuItem.name}
-                                </Link>
+                                menuItem.redirect ? (
+                                  <Link href={menuItem.href}>
+                                    {menuItem.name}
+                                  </Link>
+                                ) : (
+                                  <Link href={`/research${menuItem.href}`}>
+                                    {menuItem.name}
+                                  </Link>
+                                )
                               ) : (
                                 <span className="font-bold">
                                   {menuItem.name}
@@ -221,9 +227,15 @@ export function Header() {
                           >
                             {"name" in menuItem ? (
                               menuItem.href ? (
-                                <Link href={`/use${menuItem.href}`}>
-                                  {menuItem.name}
-                                </Link>
+                                menuItem.redirect ? (
+                                  <Link href={menuItem.href}>
+                                    {menuItem.name}
+                                  </Link>
+                                ) : (
+                                  <Link href={`/use${menuItem.href}`}>
+                                    {menuItem.name}
+                                  </Link>
+                                )
                               ) : (
                                 <span className="font-bold">
                                   {menuItem.name}
