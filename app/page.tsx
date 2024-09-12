@@ -23,10 +23,10 @@ export default function Home() {
                   alt={imageItem.imageAlt}
                   className="h-full w-full object-cover object-center "
                 />
-                <p className="legend">
-                  <span className="text-base">
-                    Description: {imageItem.description}
-                  </span>
+                <p className="legend hidden sm:block">
+                  <span className="font-semibold">{imageItem.imageAlt}</span>
+                  <br />
+                  <span>{imageItem.description}</span>
                 </p>
               </div>
             ))}
@@ -34,30 +34,38 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center text-white h-[30rem] sm:h-[45rem] ">
-          <h1 className="text-4xl font-bold tracking-tight lg:text-6xl">
-            Finding Freedom
-          </h1>
+          <div className="max-w-xl">
+            <h1 className="text-4xl font-bold lg:text-6xl">
+              Freedom Summer Digital Archive
+            </h1>
+          </div>
           <p className="text-lg sm:text-xl bg-stone-800 bg-opacity-65 leading-7 sm:leading-9 p-4 rounded-3xl">
-            The Freedom Summer Digital Archive brings together over 1,100 sound
-            recordings, newspaper articles, photographs, correspondence, and
-            other primary sources relating to the Mississippi Summer Project,
-            the 1964 African American voter registration drive later known as
-            Freedom Summer.
+            Includes over 1,100 newspaper articles, photographs, letters,
+            audio-visual recordings, and other primary sources relating to the
+            Mississippi Summer Project, the 1964 African American voter
+            registration drive later known as Freedom Summer
           </p>
           <Link
             href="#"
             className="rounded-md px-8 py-3 bg-white text-base font-medium text-gray-900 hover:bg-gray-100"
           >
-            Explore the Collection
+            Explore the Digital Collection
           </Link>
         </div>
       </div>
 
-      <main className="mt-12 sm:mt-0 grid gap-y-32">
+      <main className="mt-12 sm:mt-16 grid gap-y-32">
+        <section className="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8">
+          <About />
+        </section>
+        <section>
+          <Stats />
+        </section>
+
         {/* Resources section */}
         <section
           aria-labelledby="category-heading"
-          className="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8"
+          className="xl:mx-auto xl:max-w-7xl xl:px-8"
         >
           <div className="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
             <h2
@@ -66,13 +74,13 @@ export default function Home() {
             >
               Related Resources
             </h2>
-            <Link
+            {/* <Link
               href="#"
               className="hidden text-sm font-semibold text-red-800 hover:text-red-700 sm:block"
             >
               Browse all related resoources
               <span aria-hidden="true"> &rarr;</span>
-            </Link>
+            </Link> */}
           </div>
 
           <div className="mt-4 flow-root">
@@ -82,6 +90,7 @@ export default function Home() {
                   <Link
                     key={category.name}
                     href={category.href}
+                    target={`_blank`}
                     className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
                   >
                     <span aria-hidden="true" className="absolute inset-0">
@@ -102,28 +111,24 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <Link
+            {/* <Link
               href="#"
               className="text-sm pl-4 font-semibold text-red-800 hover:text-red-700 block sm:hidden"
             >
-              Browse all related resoources
+              Browse all related resources
               <span aria-hidden="true"> &rarr;</span>
-            </Link>
+            </Link> */}
           </div>
         </section>
 
         <section>
-          <Stats />
-        </section>
-
-        <section className="pb-4">
-          <About />
+          <History />
         </section>
 
         {/* Featured section */}
         <section
           aria-labelledby="social-impact-heading"
-          className="w-full px-4 sm:px-6 lg:px-8"
+          className="mx-auto w-full max-w-7xl px-4 sm:px-6"
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">
@@ -199,12 +204,10 @@ export default function Home() {
           </div>
         </section>
 
-        <History />
-
         {/* Featured section */}
         <section
           aria-labelledby="comfort-heading"
-          className="w-full mb-32 px-4 sm:px-6 lg:px-8"
+          className="mx-auto max-w-7xl w-full mb-32 px-4 sm:px-6"
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0">

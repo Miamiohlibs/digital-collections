@@ -81,6 +81,10 @@ ul.thumbs.animated {
   @apply flex justify-center;
 }
 
+.legend{
+  @apply text-lg !important;
+}
+
 /* Statistic Text */
 
 .stat-text {

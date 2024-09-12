@@ -7,7 +7,7 @@ export const RESOURCES = [
   },
   {
     name: "Finding Freedom Summer Traveling Exhibit",
-    href: "https://spec.lib.miamioh.edu/longform/freedomsummer/",
+    href: "https://findingfreedom.lib.miamioh.edu/",
     imageSrc:
       "https://findingfreedom.lib.miamioh.edu/assets/images/Complete/Bravery_03_Replace.jpg",
   },
@@ -63,21 +63,27 @@ export const COLLECTIONS = [
 ];
 export const CAROUSEL = [
   {
-    name: "Pic 1",
+    name: "Student Volunteers Sing with Fannie Lou Hamer",
     imageSrc: "/Unity_01_Replace.jpg",
-    imageAlt: "something about imageAlt",
-    description: "somthing from description",
+    imageAlt:
+      "Student Volunteers Sing with Fannie Lou Hamer, June 1964. Photograph by George R. Hoxie.",
+    description:
+      "George R. Hoxie Photograph Collection at the Smith Library of Regional History.",
   },
   {
-    name: "Pic 1",
+    name: "Children Registering for Freedom School",
     imageSrc: "/Contribute_01_New.jpg",
-    imageAlt: "something",
-    description: "somthing on description",
+    imageAlt:
+      "Children Registering for Freedom School, 1964. Photograph by Carol Gross Colca.",
+    description:
+      "Mississippi Freedom Summer Collection, Walter Havighurst Special Collections and University Archives.",
   },
   {
-    name: "Pic 1",
+    name: "Western College Sign with Three Young People",
     imageSrc: "/Courage_04.jpg",
-    imageAlt: "something",
-    description: "somthing about description",
+    imageAlt:
+      "Western College Sign with Three Young People, June 1964. Photograph by Herbert Randall.",
+    description:
+      "M351 Herbert Randall Freedom Summer Photographs, Historical Manuscripts, The University of Southern Mississippi.",
   },
 ];

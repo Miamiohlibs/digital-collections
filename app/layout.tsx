@@ -6,8 +6,8 @@ import "./header.css";
 
 export const metadata = {
   metadataBase: new URL("https://www.lib.miamioh.edu"),
-  title: "Miami University Libraries",
-  description: "MU Libraries Main Website",
+  title: "Miami University Libraries Digital Collections",
+  description: "MU Libraries Digital Collections Splash Page",
 };
 
 const inter = Inter({

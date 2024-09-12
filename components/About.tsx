@@ -11,7 +11,7 @@ const About = () => {
     <div className="mx-auto max-w-7xl px-6 sm:mt-0 lg:px-8">
       <div className="mx-auto max-w--xl lg:mx-0 lg:max-w-none">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          About Digital Collection
+          About the Freedom Summer Digital Archive
         </h2>
         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
           <div className="max-w-4xl lg:max-w-3xl">
@@ -50,7 +50,7 @@ const About = () => {
                   <dt>
                     <DisclosureButton className="group flex w-full items-start justify-between text-gray-900">
                       <span className="text-base font-semibold leading-7">
-                        Digitalization Satatement
+                        Digitization Statement
                       </span>
                       <span className="ml-6 flex h-7 items-center">
                         <PlusIcon
@@ -78,6 +78,33 @@ const About = () => {
                         collection finding aid
                       </a>
                       .
+                    </p>
+                  </DisclosurePanel>
+                </Disclosure>
+                <Disclosure as="div" className="mt-4">
+                  <dt>
+                    <DisclosureButton className="group flex w-full items-start justify-between text-gray-900">
+                      <span className="text-base font-semibold leading-7">
+                        Copyright Statement
+                      </span>
+                      <span className="ml-6 flex h-7 items-center">
+                        <PlusIcon
+                          aria-hidden="true"
+                          className="h-6 w-6 group-data-[open]:hidden"
+                        />
+                        <MinusIcon
+                          aria-hidden="true"
+                          className="h-6 w-6 [.group:not([data-open])_&]:hidden"
+                        />
+                      </span>
+                    </DisclosureButton>
+                  </dt>
+                  <DisclosurePanel as="dd" className="mt-2 pr-12">
+                    <p className="text-base leading-7 text-gray-600">
+                      In the Miami University Libraries Digital Collections, you
+                      will encounter works that are fully protected by
+                      copyright, that are in the public domain, or that have an
+                      unknown copyright status.
                     </p>
                   </DisclosurePanel>
                 </Disclosure>
