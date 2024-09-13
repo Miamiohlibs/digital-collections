@@ -72,8 +72,8 @@
   }
 }
 
-.underlineLink{
-  @apply text-red-800 underline hover:text-red-700
+.underlineLink {
+  @apply text-red-800 underline hover:text-red-700;
 }
 
 /* Carousel Styles */
@@ -81,8 +81,8 @@ ul.thumbs.animated {
   @apply flex justify-center;
 }
 
-.legend{
-  @apply text-sm !important;
+.legend {
+  @apply text-sm opacity-[65%] !important;
 }
 
 /* Statistic Text */
