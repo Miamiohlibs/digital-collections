@@ -82,7 +82,7 @@ ul.thumbs.animated {
 }
 
 .legend{
-  @apply text-lg !important;
+  @apply text-sm !important;
 }
 
 /* Statistic Text */

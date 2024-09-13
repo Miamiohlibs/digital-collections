@@ -40,10 +40,9 @@ export default function Home() {
             </h1>
           </div>
           <p className="text-lg sm:text-xl bg-stone-800 bg-opacity-65 leading-7 sm:leading-9 p-4 rounded-3xl">
-            Includes over 1,100 newspaper articles, photographs, letters,
-            audio-visual recordings, and other primary sources relating to the
-            Mississippi Summer Project, the 1964 African American voter
-            registration drive later known as Freedom Summer
+            Over 1,100 primary sources relating to the Mississippi Summer
+            Project, the 1964 African American voter registration drive later
+            known as Freedom Summer
           </p>
           <Link
             href="#"

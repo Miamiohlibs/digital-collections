@@ -14,8 +14,7 @@ export const RESOURCES = [
   {
     name: "Freedom Summer App",
     href: "https://fsapp.lib.miamioh.edu/",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg",
+    imageSrc: "/App.jpg",
   },
   {
     name: "Freedom Summer Memorial",

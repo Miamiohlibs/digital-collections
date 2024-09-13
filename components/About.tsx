@@ -5,6 +5,7 @@ import {
 } from "@headlessui/react";
 import Search from "./Search";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -99,12 +100,44 @@ const About = () => {
                       </span>
                     </DisclosureButton>
                   </dt>
-                  <DisclosurePanel as="dd" className="mt-2 pr-12">
+                  <DisclosurePanel
+                    as="dd"
+                    className="mt-2 pr-12 gap-y-4 flex flex-col"
+                  >
                     <p className="text-base leading-7 text-gray-600">
                       In the Miami University Libraries Digital Collections, you
                       will encounter works that are fully protected by
                       copyright, that are in the public domain, or that have an
                       unknown copyright status.
+                    </p>
+                    <div className="text-sm leading-7 text-gray-600">
+                      Digital collections works are made available for you to
+                      engage with online when:
+                      <ul className="list-disc ms-4">
+                        <li>
+                          The work is in the public domain; Our use of the work
+                          falls under one of the exceptions found in US
+                          copyright law (e.g.fair use); or
+                        </li>
+                        <li>
+                          We have obtained authorization from the rightsholder
+                          to make the work available.
+                        </li>
+                      </ul>
+                    </div>
+                    <p className="text-sm leading-7 text-gray-600">
+                      Works in our digital collections have been labeled with
+                      “rights statements” that can help you learn about the
+                      copyright status of the item. If you have questions about
+                      these right statements or information about the copyright
+                      status of a particular work, please contact us at{"  "}
+                      <Link
+                        href="mailto:copyrightMUL@miamioh.edu"
+                        className="underlineLink"
+                      >
+                        copyrightMUL@miamioh.edu
+                      </Link>
+                      .
                     </p>
                   </DisclosurePanel>
                 </Disclosure>
