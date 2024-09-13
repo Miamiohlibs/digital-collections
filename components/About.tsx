@@ -12,19 +12,27 @@ const About = () => {
     <div className="mx-auto max-w-7xl px-6 sm:mt-0 lg:px-8">
       <div className="mx-auto max-w--xl lg:mx-0 lg:max-w-none">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          About the Freedom Summer Digital Archive
+          About the Digital Collection
         </h2>
         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
           <div className="max-w-4xl lg:max-w-3xl">
             <p className="text-xl leading-8 text-gray-600">
-              The digital collection includes material from several Freedom
-              Summer collections in the United States, such as the Mark Levy
-              Collection at the Queens College Special Collections and Archives,
-              City University of New York and the Freedom Summer Archive at the
-              Walter Havighurst Special Collections & University Archives at
-              Miami University, originally part of the Western College Memorial
-              Archives.
+              The Freedom Summer Digital Archive includes over 1,100 primary
+              sources relating to the Mississippi Summer Project, the 1964
+              African American voter registration drive later known as Freedom
+              Summer.
             </p>
+
+            <p className="mt-10 pr-4 text-base leading-6 text-gray-700">
+              The digital collection brings together digitized material from
+              several Freedom Summer collections in the United States, such as
+              the Mark Levy Collection at the Queens College Special Collections
+              and Archives, City University of New York and the Freedom Summer
+              Archive at the Walter Havighurst Special Collections & University
+              Archives at Miami University, originally part of the Western
+              College Memorial Archives.
+            </p>
+
             <p className="mt-10 pr-4 text-base leading-6 text-gray-700">
               The Freedom Summer Digital Archive was funded by the Ohio
               Humanities Council, Miami University Libraries, and through the

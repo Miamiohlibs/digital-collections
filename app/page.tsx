@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Stats from "@/components/Stats";
 import Link from "next/link";
 import History from "@/components/History";
+import RedButton from "@/components/RedButton";
 
 export default function Home() {
   return (
@@ -23,9 +24,8 @@ export default function Home() {
                   alt={imageItem.imageAlt}
                   className="h-full w-full object-cover object-center "
                 />
-                <p className="legend hidden sm:block">
-                  <span className="font-semibold">{imageItem.imageAlt}</span>
-                  <br />
+                <p className="legend italic">
+                  <span>{imageItem.imageAlt}</span>{" "}
                   <span>{imageItem.description}</span>
                 </p>
               </div>
@@ -46,10 +46,12 @@ export default function Home() {
           </p>
           <Link
             href="https://digital.lib.miamioh.edu/digital/collection/fstxt/search"
-            className="rounded-md px-8 py-3 bg-white text-base font-medium text-gray-900 hover:bg-gray-100"
             target="_blank"
           >
-            Explore the Digital Collection
+            <RedButton
+              buttonType="submit"
+              buttonName="Explore Digital Collection"
+            />
           </Link>
         </div>
       </div>
