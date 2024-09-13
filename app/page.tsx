@@ -45,8 +45,9 @@ export default function Home() {
             known as Freedom Summer
           </p>
           <Link
-            href="#"
+            href="https://digital.lib.miamioh.edu/digital/collection/fstxt/search"
             className="rounded-md px-8 py-3 bg-white text-base font-medium text-gray-900 hover:bg-gray-100"
+            target="_blank"
           >
             Explore the Digital Collection
           </Link>
@@ -89,7 +90,7 @@ export default function Home() {
                   <Link
                     key={category.name}
                     href={category.href}
-                    target={`_blank`}
+                    target="_blank"
                     className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
                   >
                     <span aria-hidden="true" className="absolute inset-0">
@@ -152,12 +153,13 @@ export default function Home() {
                   Ross-Loveland, a 1952 graduate of the Western College for
                   Women.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="https://digital.lib.miamioh.edu/digital/collection/fstxt/search"
                   className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+                  target="_blank"
                 >
                   Browse All Collections
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -177,10 +179,11 @@ export default function Home() {
 
           <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
             {COLLECTIONS.map((collection) => (
-              <a
+              <Link
                 key={collection.name}
                 href={collection.href}
                 className="group block"
+                target="_blank"
               >
                 <div
                   aria-hidden="true"
@@ -198,7 +201,7 @@ export default function Home() {
                 <p className="mt-2 text-sm text-gray-500">
                   {collection.description}
                 </p>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -226,8 +229,9 @@ export default function Home() {
                 </h2>
 
                 <Link
-                  href="#"
+                  href="https://spec.lib.miamioh.edu/home/"
                   className="mt-8 rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
+                  target="_blank"
                 >
                   Contact us
                 </Link>
