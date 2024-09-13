@@ -39,11 +39,11 @@ export default function Home() {
               Freedom Summer Digital Archive
             </h1>
           </div>
-          <p className="text-lg sm:text-xl bg-stone-800 bg-opacity-65 leading-7 sm:leading-9 p-4 rounded-3xl">
+          {/* <p className="text-lg sm:text-xl bg-stone-800 bg-opacity-65 leading-7 sm:leading-9 p-4 rounded-3xl">
             Over 1,100 primary sources relating to the Mississippi Summer
             Project, the 1964 African American voter registration drive later
             known as Freedom Summer
-          </p>
+          </p> */}
           <Link
             href="https://digital.lib.miamioh.edu/digital/collection/fstxt/search"
             target="_blank"
