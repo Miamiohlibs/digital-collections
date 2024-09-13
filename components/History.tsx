@@ -1,9 +1,3 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
-
 export default function History() {
   return (
     <div className="relative isolate overflow-hidden bg-white ">
@@ -24,9 +18,9 @@ export default function History() {
           <p className="text-lg font-semibold leading-8 tracking-tight text-red-800">
             Background
           </p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             History
-          </h1>
+          </h2>
           <p className="mt-6 text-xl leading-8 text-gray-700">
             Mississippi Summer Project took place on Oxford, Ohio’s, Western
             College campus in June 1964. Its participants, about 800 northern
