@@ -19,7 +19,7 @@ export default function History() {
             Background
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            History
+          History of Freedom Summer
           </h2>
           <p className="mt-6 text-xl leading-8 text-gray-700">
             Mississippi Summer Project took place on Oxford, Ohio’s, Western
@@ -52,26 +52,23 @@ export default function History() {
                 strokeWidth={0}
               />
             </svg>
-            <figure className="border-l border-indigo-500 pl-8">
-              <blockquote className="text-xl font-semibold leading-8 tracking-tight text-gray-900">
+            <figure className="border-l border-red-700 pl-8">
+              <blockquote className="text-xl font-semibold leading-8 tracking-tight text-stone-700">
                 <p>
-                  “Vel ultricies morbi odio facilisi ultrices accumsan donec
-                  lacus purus. Lectus nibh ullamcorper ac dictum justo in
-                  euismod. Risus aenean ut elit massa. In amet aliquet eget
-                  cras. Sem volutpat enim tristique.”
+                "Bring the nation's children, and the parents will have to focus on Mississippi"
                 </p>
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
+                  src="/MosesBob.jpg"
+                  className="mt-1 h-12 w-10 flex-none rounded-full bg-gray-50"
                 />
-                <div className="text-sm leading-6">
-                  <div className="font-semibold text-gray-900">
-                    Brenna Goyette
+                <div className="text-sm content-center">
+                  <div className="font-semibold text-stone-800">
+                  Bob Moses
                   </div>
-                  <div className="text-gray-600">@brenna</div>
+                  {/* <div className="text-gray-600">Freedom Summer Leader</div> */}
                 </div>
               </figcaption>
             </figure>

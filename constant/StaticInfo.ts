@@ -1,9 +1,9 @@
 export const RESOURCES = [
   {
-    name: "Freedom Summer LibGuides",
-    href: "https://libguides.lib.miamioh.edu/FreedomSummer/collections",
+    name: "Freedom Summer Finding Aid",
+    href: "https://archivesspace.lib.miamioh.edu/repositories/2/archival_objects/21880",
     imageSrc:
-      "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Books%20and%20Documentaries.jpg",
+      "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Organizations%20and%20Archives.jpg",
   },
   {
     name: "Finding Freedom Summer Traveling Exhibit",
@@ -12,10 +12,12 @@ export const RESOURCES = [
       "https://findingfreedom.lib.miamioh.edu/assets/images/Complete/Bravery_03_Replace.jpg",
   },
   {
-    name: "Freedom Summer App",
-    href: "https://fsapp.lib.miamioh.edu/",
-    imageSrc: "/App.jpg",
+    name: "Freedom Summer LibGuides",
+    href: "https://libguides.lib.miamioh.edu/FreedomSummer/collections",
+    imageSrc:
+      "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Books%20and%20Documentaries.jpg",
   },
+
   {
     name: "Freedom Summer Memorial",
     href: "https://artoncampus.lib.miamioh.edu/freedom-summer-64-memorial-and-the-50th-anniversary-sculptures?_ga=2.232145631.116480752.1724351843-2055157657.1620069425",
@@ -23,10 +25,9 @@ export const RESOURCES = [
       "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Freedom%20Summer%20at%20Miami%20University.jpg",
   },
   {
-    name: "Telling A People’s Story",
-    href: "https://www.miamioh.edu/cca/art-museum/exhibitions/past-exhibitions/18spr-telling-a-peoples-story/index.html",
-    imageSrc:
-      "https://findingfreedom.lib.miamioh.edu/assets/images/Education/Organizations%20and%20Archives.jpg",
+    name: "Freedom Summer App",
+    href: "https://fsapp.lib.miamioh.edu/",
+    imageSrc: "/App.jpg",
   },
 ];
 export const COLLECTIONS = [

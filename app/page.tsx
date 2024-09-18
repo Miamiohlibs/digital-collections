@@ -141,27 +141,31 @@ export default function Home() {
               />
             </div>
             <div className="relative bg-stone-800 bg-opacity-65 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
-              <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
+              <div className="relative mx-auto flex max-w-3xl flex-col items-center ">
                 <h2
                   id="social-impact-heading"
-                  className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                  className="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center"
                 >
-                  <span className="block sm:inline">Introduction</span>
+                  <span className="block sm:inline">Support</span>
                 </h2>
-                <p className="mt-3 text-xl text-white">
+                <p className="mt-4 text-lg leading-7 text-stone-50 text-left">
                   The Freedom Summer Digital Archive began in 2009 with a grant
                   from the Ohio Humanities Council, the Miami University
                   Libraries, and through the generous support of Catherine
                   Ross-Loveland, a 1952 graduate of the Western College for
-                  Women.
+                  Women. Additional support was provided by a Miami University
+                  Libraries’ Diversity, Equity, and Inclusion grant in 2021 and
+                  funding from the Boldly Creative Initiative in 2023, sponsored
+                  by the Offices of the President and the Provost at Miami
+                  University.
                 </p>
-                <Link
+                {/* <Link
                   href="https://digital.lib.miamioh.edu/digital/collection/fstxt/search"
                   className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
                   target="_blank"
                 >
                   Browse All Collections
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

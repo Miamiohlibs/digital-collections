@@ -73,7 +73,7 @@ const About = () => {
                       </span>
                     </DisclosureButton>
                   </dt>
-                  <DisclosurePanel as="dd" className="mt-2 pr-12">
+                  <DisclosurePanel as="dd" className="mt-2 px-8 py-4 rounded-md bg-stone-50">
                     <p className="text-base leading-7 text-gray-600">
                       Only a portion of Miami University’s Freedom Summer
                       Archive has been digitized. Researchers are encouraged to
@@ -110,7 +110,7 @@ const About = () => {
                   </dt>
                   <DisclosurePanel
                     as="dd"
-                    className="mt-2 pr-12 gap-y-4 flex flex-col"
+                    className="mt-2 px-8 py-4 rounded-md gap-y-4 flex flex-col bg-stone-50"
                   >
                     <p className="text-base leading-7 text-gray-600">
                       In the Miami University Libraries Digital Collections, you
