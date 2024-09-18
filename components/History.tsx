@@ -55,7 +55,7 @@ export default function History() {
             <figure className="border-l border-red-700 pl-8">
               <blockquote className="text-xl font-semibold leading-8 tracking-tight text-stone-700">
                 <p>
-                "Bring the nation's children, and the parents will have to focus on Mississippi"
+                &#34;Bring the nation&#39;s children, and the parents will have to focus on Mississippi&#34;
                 </p>
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
