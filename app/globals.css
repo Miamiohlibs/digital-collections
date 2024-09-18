@@ -86,7 +86,7 @@ ul.thumbs.animated {
 }
 
 .legend {
-  @apply bg-transparent text-right p-0 opacity-80 text-white text-sm !important;
+  @apply bg-transparent text-right py-0 pr-2 opacity-80 text-white text-sm !important;
   left: 54% !important;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9) !important;
 }
