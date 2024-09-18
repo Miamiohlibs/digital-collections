@@ -53,7 +53,7 @@ export default function History() {
               />
             </svg>
             <figure className="border-l border-red-700 pl-8">
-              <blockquote className="text-xl font-semibold leading-8 tracking-tight text-stone-700">
+              <blockquote className="text-2xl font-semibold leading-8 tracking-tight text-stone-700">
                 <p>
                 &#34;Bring the nation&#39;s children, and the parents will have to focus on Mississippi&#34;
                 </p>
@@ -62,13 +62,13 @@ export default function History() {
                 <img
                   alt=""
                   src="/MosesBob.jpg"
-                  className="mt-1 h-12 w-10 flex-none rounded-full bg-gray-50"
+                  className="mt-1 h-20 w-16 flex-none rounded-full bg-gray-50"
                 />
-                <div className="text-sm content-center">
+                <div className="text-base content-center">
                   <div className="font-semibold text-stone-800">
                   Bob Moses
                   </div>
-                  {/* <div className="text-gray-600">Freedom Summer Leader</div> */}
+                  <div className="text-gray-500">Co-director of the Council of Federated Organizations (COFO)</div>
                 </div>
               </figcaption>
             </figure>
