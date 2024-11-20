@@ -1,5 +1,5 @@
 const stats = [
-  { id: 1, name: "Pages", value: "744" },
+  { id: 1, name: "Pages", value: "844" },
   { id: 2, name: "Photographs", value: "212" },
   { id: 3, name: "Videos", value: "59" },
   { id: 4, name: "Sound Recordings", value: "11" },
