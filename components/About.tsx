@@ -64,7 +64,7 @@ const About = () => {
                       <span className="ml-6 flex h-7 items-center">
                         <PlusIcon
                           aria-hidden="true"
-                          className="h-6 w-6 group-data-[open]:hidden"
+                          className="h-6 w-6 group-data-open:hidden"
                         />
                         <MinusIcon
                           aria-hidden="true"
@@ -99,7 +99,7 @@ const About = () => {
                       <span className="ml-6 flex h-7 items-center">
                         <PlusIcon
                           aria-hidden="true"
-                          className="h-6 w-6 group-data-[open]:hidden"
+                          className="h-6 w-6 group-data-open:hidden"
                         />
                         <MinusIcon
                           aria-hidden="true"

@@ -155,7 +155,7 @@ export function Header() {
                 <PopoverPanel className="absolute inset-x-0 top-[10.4rem] -z-10 bg-white shadow-lg ring-2 ring-gray-900/5">
                   <div
                     className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-16 xl:gap-x-8 
-                    bg-auto bg-no-repeat corner-alumni bg-right-bottom"
+                    bg-auto bg-no-repeat corner-alumni bg-bottom-right"
                   >
                     {ResearchMenu.map((menuGroup, index) => (
                       <div
@@ -321,7 +321,7 @@ export function Header() {
             <a href="#" className="-m-1.5 p-1.5 flex-1">
               <span className="sr-only">Miami University Libraries</span>
               <img
-                className="h-[5rem] w-auto"
+                className="h-20 w-auto"
                 src="/Logos/MUL_red_black.png"
                 alt="MUL logo"
               />

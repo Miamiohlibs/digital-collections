@@ -26,7 +26,7 @@ const HeaderMobile = () => {
               Research and Support
               <ChevronDownIcon
                 aria-hidden="true"
-                className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                className="h-5 w-5 flex-none group-data-open:rotate-180"
               />
             </DisclosureButton>
             <DisclosurePanel className="mt-2 space-y-2">
@@ -65,7 +65,7 @@ const HeaderMobile = () => {
               Use the Libraries
               <ChevronDownIcon
                 aria-hidden="true"
-                className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                className="h-5 w-5 flex-none group-data-open:rotate-180"
               />
             </DisclosureButton>
             <DisclosurePanel className="mt-2 space-y-2">
@@ -104,7 +104,7 @@ const HeaderMobile = () => {
               About
               <ChevronDownIcon
                 aria-hidden="true"
-                className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                className="h-5 w-5 flex-none group-data-open:rotate-180"
               />
             </DisclosureButton>
             <DisclosurePanel className="mt-2 space-y-2">

@@ -18,11 +18,11 @@ export default function Home() {
         <div aria-hidden="true" className="absolute inset-0 ">
           <Carousel className="slider " infiniteLoop>
             {CAROUSEL.map((imageItem) => (
-              <div className="h-[42rem] sm:h-[50rem] bg-gray-700 bg-opacity-65" key={imageItem.imageAlt}>
+              <div className="h-168 sm:h-200 bg-gray-700 bg-opacity-65" key={imageItem.imageAlt}>
                 <img
                   src={imageItem.imageSrc}
                   alt={imageItem.imageAlt}
-                  className="h-full max-w-[120rem] w-full object-cover object-center "
+                  className="h-full max-w-480 w-full object-cover object-center "
                 />
                 <p className="legend italic">
                   <span>{imageItem.imageAlt}</span>{" "}
@@ -33,7 +33,7 @@ export default function Home() {
           </Carousel>
         </div>
 
-        <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center text-white h-[36rem] sm:h-[50rem] ">
+        <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center text-white h-144 sm:h-200 ">
           <div className="max-w-xl">
             <h1 className="text-4xl font-bold lg:text-6xl">
               Freedom Summer Digital Archive
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
 
           <div className="mt-4 flow-root">
-            <div className="relative box-content h-[20.5rem] overflow-x-auto py-2 xl:overflow-visible">
+            <div className="relative box-content h-82 overflow-x-auto py-2 xl:overflow-visible">
               <div className="absolute flex space-x-8 px-4 sm:px-6 lg:px-8 xl:relative xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-x-0 xl:px-0">
                 {RESOURCES.map((category) => (
                   <Link
@@ -104,7 +104,7 @@ export default function Home() {
                     </span>
                     <span
                       aria-hidden="true"
-                      className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
+                      className="absolute inset-x-0 bottom-0 h-2/3 bg-linear-to-t from-gray-800 opacity-50"
                     />
                     <span className="relative mt-auto text-center text-xl font-bold text-white">
                       {category.name}
@@ -137,7 +137,7 @@ export default function Home() {
               <img
                 alt=""
                 src="/Courage_04.jpg"
-                className="mx-auto h-full aspect-[5/2] object-cover"
+                className="mx-auto h-full aspect-5/2 object-cover"
               />
             </div>
             <div className="relative bg-stone-800 bg-opacity-65 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
@@ -222,7 +222,7 @@ export default function Home() {
               <img
                 alt=""
                 src="/Contribute_01_New.jpg"
-                className="mx-auto h-full aspect-[5/2] object-cover"
+                className="mx-auto h-full aspect-5/2 object-cover"
               />
             </div>
             <div className="relative bg-stone-800 bg-opacity-65 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
