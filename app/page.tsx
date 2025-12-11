@@ -18,11 +18,11 @@ export default function Home() {
         <div aria-hidden="true" className="absolute inset-0 ">
           <Carousel className="slider " infiniteLoop>
             {CAROUSEL.map((imageItem) => (
-              <div className="h-[30rem] sm:h-[45rem] " key={imageItem.imageAlt}>
+              <div className="h-[42rem] sm:h-[50rem] bg-gray-700 bg-opacity-65" key={imageItem.imageAlt}>
                 <img
                   src={imageItem.imageSrc}
                   alt={imageItem.imageAlt}
-                  className="h-full w-full object-cover object-center "
+                  className="h-full max-w-[120rem] w-full object-cover object-center "
                 />
                 <p className="legend italic">
                   <span>{imageItem.imageAlt}</span>{" "}
@@ -33,7 +33,7 @@ export default function Home() {
           </Carousel>
         </div>
 
-        <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center text-white h-[30rem] sm:h-[45rem] ">
+        <div className="relative max-w-3xl flex flex-col items-center justify-center gap-y-4 sm:gap-y-8 mx-auto text-center text-white h-[36rem] sm:h-[50rem] ">
           <div className="max-w-xl">
             <h1 className="text-4xl font-bold lg:text-6xl">
               Freedom Summer Digital Archive
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
 
-      <main className="mt-12 sm:mt-16 grid gap-y-32">
+      <main className="mt-28 grid gap-y-32">
         <section className="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8">
           <About />
         </section>
