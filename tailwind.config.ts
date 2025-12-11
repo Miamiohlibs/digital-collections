@@ -4,7 +4,7 @@ import formsPlugin from "@tailwindcss/forms";
 import headlessuiPlugin from "@headlessui/tailwindcss";
 
 const config = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
