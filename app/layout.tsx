@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import LoggerProvider from "@/components/LoggerProvider";
 import "./globals.css";
 import "./header.css";
 
@@ -24,9 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <LoggerProvider>
+          <ErrorBoundary>
+            <Header />
+            {children}
+            <Footer />
+          </ErrorBoundary>
+        </LoggerProvider>
       </body>
     </html>
   );

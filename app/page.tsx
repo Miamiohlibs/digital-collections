@@ -8,6 +8,7 @@ import Stats from "@/components/Stats";
 import Link from "next/link";
 import History from "@/components/History";
 import RedButton from "@/components/RedButton";
+import { logger } from "@/lib/logger";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
           <Link
             href="https://digital.lib.miamioh.edu/digital/collection/fstxt/search"
             target="_blank"
+            onClick={() => logger.trackExternalLink('https://digital.lib.miamioh.edu/digital/collection/fstxt/search', 'Explore Digital Collection')}
           >
             <RedButton
               buttonType="submit"
@@ -94,6 +96,7 @@ export default function Home() {
                     href={category.href}
                     target="_blank"
                     className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
+                    onClick={() => logger.trackExternalLink(category.href, category.name)}
                   >
                     <span aria-hidden="true" className="absolute inset-0">
                       <img
